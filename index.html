@@ -11025,7 +11025,7 @@ wikilist-button-foreground: #000</pre>
 <div color="#92e8ff" created="20210507091635002" icon="$:/images/icon-park/money/funds-outline" modified="20210507091753133" title="Budget">
 <pre></pre>
 </div>
-<div created="20210507194406805" modified="20210508113241780" tags="$:/tags/Macro" title="budget list macro">
+<div created="20210507194406805" modified="20210509133121348" tags="$:/tags/Macro" title="budget list macro">
 <pre>\define bdgt()
 
 &lt;$set name=&quot;myVar&quot; value=&lt;&lt;currentTiddler&gt;&gt;&gt;
@@ -11034,7 +11034,7 @@ wikilist-button-foreground: #000</pre>
 
 &lt;$list filter=&quot;[tag&lt;myVar&gt;!nsort[value]]&quot;&gt;
 
-&lt;$link&gt;{{!!title}}&lt;/$link&gt; {{currency symbol}}{{!!value}}
+&lt;$link&gt;{{!!title}}&lt;/$link&gt; = {{currency symbol}}{{!!value}}
 
 &lt;/$list&gt;
 &lt;/$set&gt;
@@ -11171,7 +11171,7 @@ If you want to know how this budget calculator works at a more technical level, 
 <div created="20210507093144469" modified="20210508104628770" tags="Expenses Savings [[Account: Occasional spending]]" title="Holiday" value="84">
 <pre></pre>
 </div>
-<div color="#000000" created="20210507082720946" icon="$:/core/images/home-button" modified="20210509132241830" title="Home">
+<div color="#000000" created="20210507082720946" icon="$:/core/images/home-button" modified="20210509132728577" title="Home">
 <pre>!Balance: {{currency symbol}}(= {{Income Total}} - {{Expenses Total}} =)
 
 | &lt;&lt;listOfList Budget&gt;&gt; | {{newExpenseButton}}&lt;br&gt;&lt;br&gt;{{newIncomeButton}} |
@@ -11219,14 +11219,14 @@ If you want to know how this budget calculator works at a more technical level, 
 <div caption="List items and totals within category" created="20210509130957952" modified="20210509131122085" tags="$:/tags/TextEditor/Snippet" title="List items and totals within category (snippet)">
 <pre>&lt;&lt;listOfList&gt;&gt;</pre>
 </div>
-<div created="20210508093056780" modified="20210509124957128" tags="$:/tags/Macro" title="list items of items">
+<div created="20210508093056780" modified="20210509133049177" tags="$:/tags/Macro" title="list items of items">
 <pre>\define listOfList(incomingTag:&lt;&lt;currentTiddler&gt;&gt;)
 
 &lt;$set name=&quot;overallTag&quot; value=$incomingTag$&gt;
 
 &lt;$list filter=&quot;[tag&lt;overallTag&gt;sort[title]]&quot;&gt;
 
- &lt;$transclude tiddler={{!!icon}}/&gt;&amp;nbsp;&amp;nbsp;&lt;$link field=&quot;title&quot;/&gt; - {{currency symbol}}(=sum([is[current]tagging[]get[value]])=)
+ &lt;$transclude tiddler={{!!icon}}/&gt;&amp;nbsp;&amp;nbsp;&lt;$link field=&quot;title&quot;/&gt; = {{currency symbol}}(=sum([is[current]tagging[]get[value]])=)
 
 &lt;/$list&gt;
 
