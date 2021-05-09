@@ -369,6 +369,10 @@ Error message and password prompt
 
 <li>Mortgage</li>
 
+<li>newExpenseButton</li>
+
+<li>newIncomeButton</li>
+
 <li>Partner's Job</li>
 
 <li>Pet Healthcare Plan</li>
@@ -10867,8 +10871,8 @@ wikilist-button-foreground: #000</pre>
 <div created="20210507094330373" modified="20210507094358393" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/Tags</pre>
 </div>
-<div created="20210507082026688" modified="20210509125013266" title="$:/state/tab/sidebar--595412856">
-<pre>$:/core/ui/SideBar/More</pre>
+<div created="20210507082026688" modified="20210509132252965" title="$:/state/tab/sidebar--595412856">
+<pre>$:/core/ui/SideBar/Open</pre>
 </div>
 <div created="20210507082244443" modified="20210507082305317" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/ViewToolbar</pre>
@@ -11167,10 +11171,10 @@ If you want to know how this budget calculator works at a more technical level, 
 <div created="20210507093144469" modified="20210508104628770" tags="Expenses Savings [[Account: Occasional spending]]" title="Holiday" value="84">
 <pre></pre>
 </div>
-<div color="#000000" created="20210507082720946" icon="$:/core/images/home-button" modified="20210509125358233" title="Home">
+<div color="#000000" created="20210507082720946" icon="$:/core/images/home-button" modified="20210509132241830" title="Home">
 <pre>!Balance: {{currency symbol}}(= {{Income Total}} - {{Expenses Total}} =)
 
-&lt;&lt;listOfList Budget&gt;&gt;
+| &lt;&lt;listOfList Budget&gt;&gt; | {{newExpenseButton}}&lt;br&gt;&lt;br&gt;{{newIncomeButton}} |
 
 ,,[[Help|Help]] | [[Change currency symbol|currency symbol]] | [[Credits]],,</pre>
 </div>
@@ -11238,6 +11242,12 @@ If you want to know how this budget calculator works at a more technical level, 
 </div>
 <div created="20210507090134728" modified="20210508103005725" tags="Expenses [[Account: Bills]] Living" title="Mortgage" value="400">
 <pre></pre>
+</div>
+<div created="20210509131853447" modified="20210509132051435" tags="" title="newExpenseButton">
+<pre>&lt;$button&gt;&lt;$action-sendmessage $message=&quot;tm-new-tiddler&quot; title=&quot;Expense name...&quot; tags=&quot;Expenses&quot; value=&quot;0&quot;/&gt;New Expense&lt;/$button&gt;</pre>
+</div>
+<div created="20210509131935491" modified="20210509132106727" tags="" title="newIncomeButton">
+<pre>&lt;$button&gt;&lt;$action-sendmessage $message=&quot;tm-new-tiddler&quot; title=&quot;Income name...&quot; tags=&quot;Income&quot; value=&quot;0&quot;/&gt;New Income&lt;/$button&gt;</pre>
 </div>
 <div created="20210507082831777" modified="20210508102845937" tags="Income" title="Partner's Job" value="300">
 <pre></pre>
