@@ -219,6 +219,8 @@ Error message and password prompt
 
 <li>$:/state/edit/references--66286593</li>
 
+<li>$:/state/edit/references-1128752795</li>
+
 <li>$:/state/edit/references-1915420913</li>
 
 <li>$:/state/edit/references-2123239345</li>
@@ -317,7 +319,7 @@ Error message and password prompt
 
 <li>Expenses Total</li>
 
-<li>Gas</li>
+<li>Fuel</li>
 
 <li>Gifts</li>
 
@@ -380,8 +382,6 @@ Error message and password prompt
 <li>Pet Insurance</li>
 
 <li>Pet Toys</li>
-
-<li>Petrol</li>
 
 <li>Pets</li>
 
@@ -10841,6 +10841,9 @@ wikilist-button-foreground: #000</pre>
 <div created="20210508095858615" modified="20210508095858615" title="$:/state/edit/references--66286593">
 <pre>show</pre>
 </div>
+<div created="20210510071546958" modified="20210510071546958" title="$:/state/edit/references-1128752795">
+<pre>show</pre>
+</div>
 <div created="20210508102646425" modified="20210508102646425" title="$:/state/edit/references-1915420913">
 <pre>show</pre>
 </div>
@@ -10880,7 +10883,7 @@ wikilist-button-foreground: #000</pre>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div list="Home Accounts Categories" title="$:/StoryList">
+<div created="20210510072041615" list="Credits Help Home Accounts Categories" modified="20210510072101183" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20210507224549379" modified="20210507224549379" title="$:/theme">
@@ -11122,7 +11125,7 @@ wikilist-button-foreground: #000</pre>
 <div created="20210508082348890" modified="20210508082401331" tags="" title="Expenses Total">
 <pre>(= sum([tag[Expenses]get[value]]) =)</pre>
 </div>
-<div created="20210507090320080" modified="20210508102631196" tags="Expenses House [[Account: Bills]]" title="Gas" value="31">
+<div created="20210507092120976" modified="20210510071550134" tags="Expenses [[Account: Current]] Vehicle" title="Fuel" value="80">
 <pre></pre>
 </div>
 <div color="#decfff" created="20210507093009480" icon="$:/images/boxicons/regular/bx-gift" modified="20210509131221664" tags="Categories" title="Gifts">
@@ -11140,7 +11143,7 @@ wikilist-button-foreground: #000</pre>
 <div created="20210507090806485" modified="20210508104513240" tags="Expenses Living [[Account: Occasional spending]]" title="Hair &amp; Beauty" value="15">
 <pre></pre>
 </div>
-<div color="#edcbcd" created="20210508071434651" icon="$:/core/images/help" modified="20210509125203012" tags="Home" title="Help">
+<div color="#edcbcd" created="20210508071434651" icon="$:/core/images/help" modified="20210510072454648" tags="Home" title="Help">
 <pre>!!Saving &amp; Storage
 
 Once you make changes, you can save this wiki by clicking {{$:/core/ui/Buttons/save-wiki}} on the top right. Your browser will prompt you to download a html file which will contain this budget calculator with your changes included. [[Click here|https://tiddlywiki.com/#Saving]] for more options for saving. 
@@ -11156,11 +11159,11 @@ The other main presmise of this budget calculator is to divide [[expenses|Expens
 
 All monthly recurring [[expenses|Expenses]] need to then be tagged &quot;[[Account: Bills]]&quot;. For an example, check the tags on [[electricity|Electricity]]. This means you can easily see how much in total will need to be in the account each month, in order to cover all bills that may come out.
 
-Expenses that come out infrequently can be put into the [[&quot;occasional spending&quot; account|Account: Occasional spending]]. Those expenses are tagged [[Account: Occasional spending]], so that we know how much goes into each pot. Then, when it's time to pay, you know there will be money in the pots ready for it. 
+Expenses that come out infrequently can be put into the [[&quot;occasional spending&quot; account|Account: Occasional spending]]. Those expenses are tagged [[Account: Occasional spending]], so that when it's time to pay, you know there will be money in that account ready for it. 
 
-General spending money just stays in the [[current|Account: Current]] account. Expenses that fit into that category (for example [[Petrol]]) is tagged with &quot;[[Account: Current]]&quot; and then you know how much money should be in that account at the start of each month.
+General spending money just stays in the [[current|Account: Current]] account. Expenses that fit into that category (for example [[Fuel]]) are tagged with &quot;[[Account: Current]]&quot; and then you know how much money should go into that account at the start of each month.
 
-You can also set a category for each expense. For example, the [[Living]] category contains a list of expenses that fit into that category. When making a new category item, tag it [[Categories]], so that it shows up there and you can judge spending by category. Also, add this text to the item: `&lt;&lt;bdgtp&gt;&gt;` - this ensures that all related expenses are listed. Again, see the [[Living]] category for a template.
+You can also set a category for each expense. Again, taking [[Fuel]] as an example, it also has the [[Vehicle]] tag. All other expenses related to your vehicle are contained there. When making a new category item, tag it [[Categories]], so that it shows up in the category list and you can judge spending by category. Also, add this text to the item: `&lt;&lt;bdgtp&gt;&gt;` - this ensures that all expenses with that category tag are listed. Again, see the [[Living]] category for a template.
 
 Bear in mind that all calculations are done on a monthly basis. If you gain income on a weekly basis, or expenses come out on a weekly/annual basis, you will need to do some math to get the accurate monthly amount.
 
@@ -11259,9 +11262,6 @@ If you want to know how this budget calculator works at a more technical level, 
 <pre></pre>
 </div>
 <div created="20210508104531250" modified="20210508104556094" tags="Pets [[Account: Current]] Expenses" title="Pet Toys" value="10">
-<pre></pre>
-</div>
-<div created="20210507092120976" modified="20210508104707964" tags="Expenses [[Account: Current]] Vehicle" title="Petrol" value="80">
 <pre></pre>
 </div>
 <div color="#efbdd3" created="20210507092440147" icon="$:/images/coreui-icons/free/cil-dog" modified="20210508095902816" tags="Categories" title="Pets">
