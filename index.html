@@ -217,6 +217,8 @@ Error message and password prompt
 
 <li>$:/state/advancedsearch/currentTab</li>
 
+<li>$:/state/edit/references--1149005507</li>
+
 <li>$:/state/edit/references--66286593</li>
 
 <li>$:/state/edit/references-1128752795</li>
@@ -279,6 +281,8 @@ Error message and password prompt
 
 <li>budget list macro with tag pills</li>
 
+<li>Budget Overview</li>
+
 <li>Car Insurance</li>
 
 <li>Car MOT</li>
@@ -317,6 +321,10 @@ Error message and password prompt
 
 <li>Expenses</li>
 
+<li>Expenses By Account</li>
+
+<li>Expenses By Category</li>
+
 <li>Expenses Total</li>
 
 <li>Fuel</li>
@@ -334,8 +342,6 @@ Error message and password prompt
 <li>Help</li>
 
 <li>Holiday</li>
-
-<li>Home</li>
 
 <li>House</li>
 
@@ -10320,10 +10326,10 @@ Error message and password prompt
 &lt;/$reveal&gt;
 </pre>
 </div>
-<div created="20210507082021065" modified="20210508101456772" title="$:/DefaultTiddlers">
-<pre>Home
-Accounts
-Categories</pre>
+<div created="20210507082021065" modified="20210510100939576" title="$:/DefaultTiddlers">
+<pre>[[Budget Overview]]
+[[Expenses By Account]]
+[[Expenses By Category]]</pre>
 </div>
 <div caption="printer" collection="" library="Bootstrap" library_version="1.3.0" tags="$:/tags/Image Icons Images SVG" title="$:/images/bootstrap/printer">
 <pre>&lt;svg width=&quot;22pt&quot; height=&quot;22pt&quot; class=&quot;tc-image-bts-printer tc-image-button&quot; viewBox=&quot;0 0 16 16&quot;&gt;&lt;path d=&quot;M2.5 8a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z&quot;/&gt;&lt;path d=&quot;M5 1a2 2 0 0 0-2 2v2H2a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h1v1a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1h1a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2H5zM4 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2H4V3zm1 5a2 2 0 0 0-2 2v1H2a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v-1a2 2 0 0 0-2-2H5zm7 2v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1z&quot;/&gt;&lt;/svg&gt;</pre>
@@ -10838,6 +10844,9 @@ wikilist-button-foreground: #000</pre>
 <div created="20210507083850981" modified="20210509130755671" title="$:/state/advancedsearch/currentTab">
 <pre>$:/core/ui/AdvancedSearch/Standard</pre>
 </div>
+<div created="20210510095442064" modified="20210510095442064" title="$:/state/edit/references--1149005507">
+<pre>show</pre>
+</div>
 <div created="20210508095858615" modified="20210508095858615" title="$:/state/edit/references--66286593">
 <pre>show</pre>
 </div>
@@ -10883,7 +10892,7 @@ wikilist-button-foreground: #000</pre>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210510072041615" list="Credits Help Home Accounts Categories" modified="20210510072101183" title="$:/StoryList">
+<div list="[[Budget Overview]] [[Expenses By Account]] [[Expenses By Category]]" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20210507224549379" modified="20210507224549379" title="$:/theme">
@@ -11065,6 +11074,13 @@ wikilist-button-foreground: #000</pre>
 
 </pre>
 </div>
+<div color="#000000" created="20210507082720946" icon="$:/core/images/home-button" modified="20210510095448305" title="Budget Overview">
+<pre>|&lt;&lt;listOfList Budget&gt;&gt; | {{newExpenseButton}}&lt;br&gt;&lt;br&gt;{{newIncomeButton}} |
+
+!Delta: {{currency symbol}}(= {{Income Total}} - {{Expenses Total}} =)
+
+,,[[Help|Help]] | [[Change currency symbol|currency symbol]] | [[Credits]],,</pre>
+</div>
 <div created="20210507092222977" modified="20210508103403803" tags="Expenses Vehicle [[Account: Bills]]" title="Car Insurance" value="35.20">
 <pre></pre>
 </div>
@@ -11122,6 +11138,12 @@ wikilist-button-foreground: #000</pre>
 <div color="#ffa8b0" created="20210507085206513" icon="$:/images/icon-park/arrows/upload-outline" modified="20210507203443427" tags="Budget" title="Expenses">
 <pre>&lt;&lt;bdgtp&gt;&gt;</pre>
 </div>
+<div created="20210510100721503" modified="20210510100808627" tags="" title="Expenses By Account">
+<pre>{{Accounts}}</pre>
+</div>
+<div created="20210510100815001" modified="20210510100829314" tags="" title="Expenses By Category">
+<pre>{{Categories}}</pre>
+</div>
 <div created="20210508082348890" modified="20210508082401331" tags="" title="Expenses Total">
 <pre>(= sum([tag[Expenses]get[value]]) =)</pre>
 </div>
@@ -11143,7 +11165,7 @@ wikilist-button-foreground: #000</pre>
 <div created="20210507090806485" modified="20210508104513240" tags="Expenses Living [[Account: Occasional spending]]" title="Hair &amp; Beauty" value="15">
 <pre></pre>
 </div>
-<div color="#edcbcd" created="20210508071434651" icon="$:/core/images/help" modified="20210510072454648" tags="Home" title="Help">
+<div color="#edcbcd" created="20210508071434651" icon="$:/core/images/help" modified="20210510101019617" tags="[[Budget Overview]]" title="Help">
 <pre>!!Saving &amp; Storage
 
 Once you make changes, you can save this wiki by clicking {{$:/core/ui/Buttons/save-wiki}} on the top right. Your browser will prompt you to download a html file which will contain this budget calculator with your changes included. [[Click here|https://tiddlywiki.com/#Saving]] for more options for saving. 
@@ -11153,7 +11175,7 @@ You can also encrypt the data via tools &gt; set password on the right. Don't fo
 !!Usage
 The basic premise of this budget calculator is (obviously) to keep income above expenditure.
 
-This is achieved by creating budget items using the {{$:/core/ui/Buttons/new-tiddler}} button on the top right. Name your income/expense, and then click the &quot;tag name&quot; box. Choose either the Income or Expense tags (this is important, or the figures won't auto-update elsewhere). Then click save, and enter the amount. The total income/expense amounts will show on the [[home page|Home]], as well as the balance. These figures will update in real time as you change/add amounts.
+This is achieved by creating budget items using the {{$:/core/ui/Buttons/new-tiddler}} button on the top right. Name your income/expense, and then click the &quot;tag name&quot; box. Choose either the Income or Expense tags (this is important, or the figures won't auto-update elsewhere). Then click save, and enter the amount. The total income/expense amounts will show on the [[budget overview|Budget Overview]], as well as the balance. These figures will update in real time as you change/add amounts.
 
 The other main presmise of this budget calculator is to divide [[expenses|Expenses]] up between [[bank accounts|Accounts]]. For example, for all monthly recurring expenses should be set to come out of one account, and that account should //not// be used to pay for anything else. In this example, that's the [[bills account|Account: Bills]]. 
 
@@ -11173,13 +11195,6 @@ If you want to know how this budget calculator works at a more technical level, 
 </div>
 <div created="20210507093144469" modified="20210508104628770" tags="Expenses Savings [[Account: Occasional spending]]" title="Holiday" value="84">
 <pre></pre>
-</div>
-<div color="#000000" created="20210507082720946" icon="$:/core/images/home-button" modified="20210509132728577" title="Home">
-<pre>!Balance: {{currency symbol}}(= {{Income Total}} - {{Expenses Total}} =)
-
-| &lt;&lt;listOfList Budget&gt;&gt; | {{newExpenseButton}}&lt;br&gt;&lt;br&gt;{{newIncomeButton}} |
-
-,,[[Help|Help]] | [[Change currency symbol|currency symbol]] | [[Credits]],,</pre>
 </div>
 <div color="#f5ebdc" created="20210507102240123" icon="$:/images/boxicons/solid/bxs-home-heart" modified="20210508095902815" tags="Categories" title="House">
 <pre>&lt;&lt;bdgtp&gt;&gt;</pre>
@@ -11279,14 +11294,14 @@ If you want to know how this budget calculator works at a more technical level, 
 <div created="20210507092839924" modified="20210508105339762" tags="Expenses Leisure [[Account: Bills]]" title="Streaming Service" value="9">
 <pre></pre>
 </div>
-<div created="20210508071534713" modified="20210509130017221" tags="Help" title="Technical Info">
+<div created="20210508071534713" modified="20210510101036025" tags="Help" title="Technical Info">
 <pre>The [[formulas plugin|https://chronicles.wiki/TiddlyWikiFormula/]] has been used to do all the math in this calculator. The basic syntax is `(= 3+2 =)`, and tiddlers tagged &quot;Income&quot; which all have a &quot;value&quot; field can have their values added together with `(=sum([tag[Income]get[value]])=)`.
 
 The &quot;amount&quot; input is jammed into the subtitle area at the top of each tiddler. Edit this tiddler: [[$:/core/ui/ViewTemplate/subtitle]].  `&lt;&lt;currentTiddler&gt;&gt;` will refer to whichever tiddler the subtitle is contained in. Note the use of `&lt;$set name=&quot;myVar&quot; value=&lt;&lt;currentTiddler&gt;&gt;&gt;`, which means we can use `&lt;&lt;currentTiddler&gt;&gt;` //inside// a filter expression. Then there's some crafty use of the `&lt;$list&gt;` functionality to ONLY show the `&lt;$edit-text&gt;` input field for the currnet tiddler IF it has a &quot;value&quot; field - even if that &quot;value&quot; field is empty. The `&lt;$edit-text&gt;` is set to change the &quot;value&quot; field. Then I do a `&lt;$reveal&gt;` if the &quot;value&quot; field is less than 0.1, to show a little warning if the field is left empty.
 
 The [[&lt;&lt;bdgt&gt;&gt;|budget list macro]] and [[&lt;&lt;bdgtp&gt;|budget list macro with tag pills]] macros are quick ways to list all expenses associated with an overall tag, from highest to lowest. EG in the [[Leisure]] or [[Account: Occasional spending]] items. The difference between them is that [[&lt;&lt;bdgtp&gt;|budget list macro with tag pills]] shows all the associated tags for each expense, and [[&lt;&lt;bdgt&gt;&gt;|budget list macro]] doesn't. So just call that macro in an overall category tag by typing `&lt;&lt;bdgt&gt;&gt;` in the text field and it'll do its magic. This also means you can edit the macro to change the look of those lists across the whole budget calculator.
 
-`is[current]tagging[]` is a wonderful filter operator for adding the total of all the items //inside// an overall tag. EG listing the total for income and expense on the [[Home]] page.
+`is[current]tagging[]` is a wonderful filter operator for adding the total of all the items //inside// an overall tag. EG listing the total for income and expense on the [[Budget Overview]] page.
 
 ```
 &lt;$list filter=&quot;[tag[Budget]!sort[title]]&quot;&gt;
