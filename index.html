@@ -141,8 +141,6 @@ Error message and password prompt
 
 <p>This <a class="tc-tiddlylink-external" href="https://tiddlywiki.com" rel="noopener noreferrer" target="_blank">TiddlyWiki</a> contains the following tiddlers:</p><p><ul>
 
-<li>&lt;&lt;delta</li>
-
 <li>$:/config/AutoSave</li>
 
 <li>$:/config/DownloadSaver/AutoSave</li>
@@ -162,6 +160,8 @@ Error message and password prompt
 <li>$:/config/WikiParserRules/Inline/wikilink</li>
 
 <li>$:/core</li>
+
+<li>$:/core/ui/SideBar/Open</li>
 
 <li>$:/core/ui/ViewTemplate/subtitle</li>
 
@@ -295,6 +295,10 @@ Error message and password prompt
 
 <li>budgetDelta</li>
 
+<li>budgetDeltaDisplay</li>
+
+<li>budgetDeltaSidebar</li>
+
 <li>Car Insurance</li>
 
 <li>Car MOT</li>
@@ -324,8 +328,6 @@ Error message and password prompt
 <li>Credits</li>
 
 <li>currency symbol</li>
-
-<li>delta</li>
 
 <li>Dry Cleaning</li>
 
@@ -433,9 +435,6 @@ Error message and password prompt
 <!--~~ Ordinary tiddlers ~~-->
 
 <div id="storeArea" style="display:none;">
-<div title="&lt;&lt;delta" type="text/vnd.tiddlywiki">
-<pre>test</pre>
-</div>
 <div created="20210507113553012" modified="20210507113553012" title="$:/config/AutoSave">
 <pre>no</pre>
 </div>
@@ -10327,6 +10326,44 @@ Error message and password prompt
     }
 }</pre>
 </div>
+<div caption="Open" created="20210511201601262" modified="20210511202045301" tags="$:/tags/SideBar" title="$:/core/ui/SideBar/Open">
+<pre>\whitespace trim
+\define lingo-base() $:/language/CloseAll/
+
+\define drop-actions()
+&lt;$action-listops $tiddler=&lt;&lt;tv-story-list&gt;&gt; $subfilter=&quot;+[insertbefore:currentTiddler&lt;actionTiddler&gt;]&quot;/&gt;
+\end
+
+\define placeholder()
+&lt;div class=&quot;tc-droppable-placeholder&quot;/&gt;
+\end
+
+\define droppable-item(button)
+\whitespace trim
+&lt;$droppable actions=&lt;&lt;drop-actions&gt;&gt; enable=&lt;&lt;tv-allow-drag-and-drop&gt;&gt;&gt;
+&lt;&lt;placeholder&gt;&gt;
+&lt;div&gt;
+$button$
+&lt;/div&gt;
+&lt;/$droppable&gt;
+\end
+
+{{budgetDeltaDisplay}}
+
+&lt;div class=&quot;tc-sidebar-tab-open&quot;&gt;
+&lt;$list filter=&quot;[list&lt;tv-story-list&gt;]&quot; history=&lt;&lt;tv-history-list&gt;&gt; storyview=&quot;pop&quot;&gt;
+&lt;div class=&quot;tc-sidebar-tab-open-item&quot;&gt;
+&lt;$macrocall $name=&quot;droppable-item&quot; button=&quot;&quot;&quot;&lt;$button message=&quot;tm-close-tiddler&quot; tooltip={{$:/language/Buttons/Close/Hint}} aria-label={{$:/language/Buttons/Close/Caption}} class=&quot;tc-btn-invisible tc-btn-mini tc-small-gap-right&quot;&gt;{{$:/core/images/close-button}}&lt;/$button&gt;&lt;$link to={{!!title}}&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;&quot;&quot;&quot;/&gt;
+&lt;/div&gt;
+&lt;/$list&gt;
+&lt;$tiddler tiddler=&quot;&quot;&gt;
+&lt;div&gt;
+&lt;$macrocall $name=&quot;droppable-item&quot; button=&quot;&quot;&quot;&lt;$button message=&quot;tm-close-all-tiddlers&quot; class=&quot;tc-btn-invisible tc-btn-mini&quot;&gt;&lt;&lt;lingo Button&gt;&gt;&lt;/$button&gt;&quot;&quot;&quot;/&gt;
+&lt;/div&gt;
+&lt;/$tiddler&gt;
+&lt;/div&gt;
+</pre>
+</div>
 <div created="20210421112358302" modified="20210508113318631" tags="$:/tags/ViewTemplate" title="$:/core/ui/ViewTemplate/subtitle" value="06">
 <pre>\whitespace trim
 &lt;$reveal type=&quot;nomatch&quot; stateTitle=&lt;&lt;folded-state&gt;&gt; text=&quot;hide&quot; tag=&quot;div&quot; retain=&quot;yes&quot; animate=&quot;yes&quot;&gt;
@@ -10408,7 +10445,7 @@ Error message and password prompt
 <div status="complete" title="$:/Import">
 <pre>The following tiddlers were imported:
 
-# [[$:/plugins/ebalster/condition]]</pre>
+# [[Delta]]</pre>
 </div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
@@ -10950,8 +10987,8 @@ wikilist-button-foreground: #000</pre>
 <div created="20210507082009578" modified="20210508111354248" title="$:/SiteTitle">
 <pre>Budgetlywiki</pre>
 </div>
-<div created="20210507083850981" modified="20210509130755671" title="$:/state/advancedsearch/currentTab">
-<pre>$:/core/ui/AdvancedSearch/Standard</pre>
+<div created="20210507083850981" modified="20210511202632678" title="$:/state/advancedsearch/currentTab">
+<pre>$:/core/ui/AdvancedSearch/Shadows</pre>
 </div>
 <div created="20210510095442064" modified="20210510095442064" title="$:/state/edit/references--1149005507">
 <pre>show</pre>
@@ -10977,8 +11014,8 @@ wikilist-button-foreground: #000</pre>
 <div created="20210507224600060" modified="20210507224658633" title="$:/state/ShowPaletteEditor">
 <pre>yes</pre>
 </div>
-<div created="20210507083850981" modified="20210509130755672" title="$:/state/tab--1498284803">
-<pre>$:/core/ui/AdvancedSearch/Standard</pre>
+<div created="20210507083850981" modified="20210511202632679" title="$:/state/tab--1498284803">
+<pre>$:/core/ui/AdvancedSearch/Shadows</pre>
 </div>
 <div created="20210507082050492" modified="20210507224550909" title="$:/state/tab--1963855381">
 <pre>$:/core/ui/ControlPanel/Palette</pre>
@@ -10992,8 +11029,8 @@ wikilist-button-foreground: #000</pre>
 <div created="20210507094330373" modified="20210507094358393" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/Tags</pre>
 </div>
-<div created="20210507082026688" modified="20210511191607765" title="$:/state/tab/sidebar--595412856">
-<pre>$:/core/ui/SideBar/Recent</pre>
+<div created="20210507082026688" modified="20210511202959281" title="$:/state/tab/sidebar--595412856">
+<pre>$:/core/ui/SideBar/Open</pre>
 </div>
 <div created="20210507082244443" modified="20210507082305317" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/ViewToolbar</pre>
@@ -11001,7 +11038,7 @@ wikilist-button-foreground: #000</pre>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210511191555693" list="[[Budget Overview]] [[Expenses By Account]] [[Expenses By Category]]" modified="20210511191555693" title="$:/StoryList">
+<div list="[[Budget Overview]] [[Expenses By Account]] [[Expenses By Category]]" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20210510201052831" modified="20210510204130807" module-type="macro" title="$:/than/macros/editTiddler.js" type="application/javascript">
@@ -11217,26 +11254,30 @@ console.log(&quot;ADDING IT&quot;);
 
 </pre>
 </div>
-<div color="#000000" created="20210507082720946" icon="$:/core/images/home-button" modified="20210511191538145" title="Budget Overview">
+<div color="#000000" created="20210507082720946" icon="$:/core/images/home-button" modified="20210511203107204" title="Budget Overview">
 <pre>\define formulaFixed() 2
 &lt;!-- https://chronicles.wiki/TiddlyWikiFormula/#Formulas%20in%20WikiText --&gt;
 
-|&lt;&lt;listOfList Budget&gt;&gt; | {{newExpenseButton}}&lt;br&gt;&lt;br&gt;{{newIncomeButton}} |
-
-
-&lt;$wikify name=number text={{budgetDelta}}&gt;
-&lt;$set name=csscolor filter=&quot;[&lt;number&gt;sign[]match[-1]then[color:red;font-weight:bold]else[color:black;]]&quot;&gt;
-
-&lt;h2&gt;Delta: {{currency symbol}}&lt;span style=&lt;&lt;csscolor&gt;&gt;&gt;&lt;&lt;number&gt;&gt;&lt;/span&gt;&lt;/h2&gt;
-
-&lt;/$set&gt;
-&lt;/$wikify&gt;
+|&lt;&lt;listOfList Budget&gt;&gt; | {{budgetDeltaDisplay}} | {{newExpenseButton}}&lt;br&gt;&lt;br&gt;{{newIncomeButton}} |
 
 
 ,,[[Help|Help]] | [[Change currency symbol|currency symbol]] | [[Credits]],,</pre>
 </div>
 <div created="20210510185906395" modified="20210511172231737" tags="" title="budgetDelta">
 <pre>(= {{Income Total}} - {{Expenses Total}} =)</pre>
+</div>
+<div created="20210511201929073" modified="20210511201955280" tags="" title="budgetDeltaDisplay">
+<pre>\define formulaFixed() 2
+&lt;$wikify name=number text={{budgetDelta}}&gt;
+&lt;$set name=csscolor filter=&quot;[&lt;number&gt;sign[]match[-1]then[color:red;font-weight:bold]else[color:black;]]&quot;&gt;
+
+&lt;h1 style=&lt;&lt;csscolor&gt;&gt;&gt;Delta: {{currency symbol}}&lt;&lt;number&gt;&gt;&lt;/h1&gt;
+
+&lt;/$set&gt;
+&lt;/$wikify&gt;</pre>
+</div>
+<div caption="Delta" created="20210511200701241" list-after="$:/core/ui/SideBar/Recent" modified="20210511203006375" tags="$:/tags/SideBar" title="budgetDeltaSidebar">
+<pre>{{budgetDeltaDisplay}}</pre>
 </div>
 <div created="20210507092222977" modified="20210508103403803" tags="Expenses Vehicle [[Account: Bills]]" title="Car Insurance" value="35.20">
 <pre></pre>
@@ -11283,9 +11324,6 @@ console.log(&quot;ADDING IT&quot;);
 <div created="20210508112904674" modified="20210508113639787" tags="" title="currency symbol">
 <pre>$</pre>
 </div>
-<div title="delta" type="text/vnd.tiddlywiki">
-<pre>test</pre>
-</div>
 <div created="20210507090519163" modified="20210508104448287" tags="Expenses Living [[Account: Occasional spending]]" title="Dry Cleaning" value="15">
 <pre></pre>
 </div>
@@ -11307,7 +11345,7 @@ console.log(&quot;ADDING IT&quot;);
 <div created="20210508082348890" modified="20210508082401331" tags="" title="Expenses Total">
 <pre>(= sum([tag[Expenses]get[value]]) =)</pre>
 </div>
-<div created="20210507092120976" modified="20210511191255467" tags="Expenses [[Account: Current]] Vehicle" title="Fuel" value="80">
+<div created="20210507092120976" modified="20210511202354018" tags="Expenses [[Account: Current]] Vehicle" title="Fuel" value="80">
 <pre></pre>
 </div>
 <div color="#decfff" created="20210507093009480" icon="$:/images/boxicons/regular/bx-gift" modified="20210509131221664" tags="Categories" title="Gifts">
