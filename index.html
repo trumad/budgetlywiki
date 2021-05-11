@@ -141,6 +141,8 @@ Error message and password prompt
 
 <p>This <a class="tc-tiddlylink-external" href="https://tiddlywiki.com" rel="noopener noreferrer" target="_blank">TiddlyWiki</a> contains the following tiddlers:</p><p><ul>
 
+<li>&lt;&lt;delta</li>
+
 <li>$:/config/AutoSave</li>
 
 <li>$:/config/DownloadSaver/AutoSave</li>
@@ -257,6 +259,8 @@ Error message and password prompt
 
 <li>$:/StoryList</li>
 
+<li>$:/than/macros/editTiddler.js</li>
+
 <li>$:/theme</li>
 
 <li>$:/themes/tiddlywiki/snowwhite</li>
@@ -321,11 +325,15 @@ Error message and password prompt
 
 <li>currency symbol</li>
 
+<li>delta</li>
+
 <li>Dry Cleaning</li>
 
 <li>Eating out</li>
 
 <li>Electricity</li>
+
+<li>example</li>
 
 <li>Expenses</li>
 
@@ -427,6 +435,9 @@ Error message and password prompt
 <!--~~ Ordinary tiddlers ~~-->
 
 <div id="storeArea" style="display:none;">
+<div title="&lt;&lt;delta" type="text/vnd.tiddlywiki">
+<pre>test</pre>
+</div>
 <div created="20210507113553012" modified="20210507113553012" title="$:/config/AutoSave">
 <pre>no</pre>
 </div>
@@ -10995,6 +11006,40 @@ wikilist-button-foreground: #000</pre>
 <div list="[[Budget Overview]] [[Expenses By Account]] [[Expenses By Category]]" title="$:/StoryList">
 <pre></pre>
 </div>
+<div created="20210510201052831" modified="20210510204130807" module-type="macro" title="$:/than/macros/editTiddler.js" type="application/javascript">
+<pre>/*\
+title: $:/than/macros/editTiddler.js
+type: application/javascript
+module-type: macro
+
+
+&lt;&lt;editTiddler tiddlername:&quot;example&quot; tiddlercontent:&quot;test&quot;&gt;&gt;
+
+Example to get data from wikipedia: &lt;&lt;goFetch &quot;Eureka&quot; &quot;https://en.wikipedia.org/wiki/Eureka_(word)&quot;&gt;&gt;
+
+
+\*/
+
+(function(){
+    // modified from https://groups.google.com/g/tiddlywiki/c/E_X3KUHOvEk/m/ucL23ju5AAAJ
+    /*jslint node: true, browser: true */
+    /*global $tw: false */
+    &quot;use strict&quot;;
+    exports.name = &quot;editTiddler&quot;;
+    exports.params = [{name: &quot;tiddlername&quot;, default: &quot;example&quot;},
+                      {name: &quot;tiddlercontent&quot;, default: &quot;test&quot;},
+                     ];
+    exports.run = function(tiddlername,tiddlercontent) {
+
+        go(); // runs the async function &quot;go&quot;
+
+        async function go(){
+console.log(&quot;ADDING IT&quot;);
+            $tw.wiki.addTiddler({title:tiddlername, text:tiddlercontent, type: &quot;text/vnd.tiddlywiki&quot;});
+        }
+    }
+})();</pre>
+</div>
 <div created="20210507224549379" modified="20210507224549379" title="$:/theme">
 <pre>$:/themes/tiddlywiki/vanilla</pre>
 </div>
@@ -11174,19 +11219,23 @@ wikilist-button-foreground: #000</pre>
 
 </pre>
 </div>
-<div color="#000000" created="20210507082720946" icon="$:/core/images/home-button" modified="20210510194653136" title="Budget Overview">
-<pre>|&lt;&lt;listOfList Budget&gt;&gt; | {{newExpenseButton}}&lt;br&gt;&lt;br&gt;{{newIncomeButton}} |
+<div color="#000000" created="20210507082720946" icon="$:/core/images/home-button" modified="20210511191238158" title="Budget Overview">
+<pre>\define formulaFixed() 2
+&lt;!-- https://chronicles.wiki/TiddlyWikiFormula/#Formulas%20in%20WikiText --&gt;
+|&lt;&lt;listOfList Budget&gt;&gt; | {{newExpenseButton}}&lt;br&gt;&lt;br&gt;{{newIncomeButton}} |
 
-!Delta: {{currency symbol}}(= {{Income Total}} - {{Expenses Total}} =)
 
-&lt;$reveal type=&quot;lt&quot; state=&quot;budgetDelta&quot; text=&quot;0&quot;&gt;
-Less than 0!
-&lt;/$reveal&gt;
+
+&lt;$wikify name=number text={{budgetDelta}}&gt;
+&lt;$set name=csscolor filter=&quot;[&lt;number&gt;sign[]match[-1]then[color:red;font-weight:bold]else[color:black;]]&quot;&gt;
+&lt;h2&gt;Delta: {{currency symbol}}&lt;span style=&lt;&lt;csscolor&gt;&gt;&gt;&lt;&lt;number&gt;&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;/$set&gt;
+&lt;/$wikify&gt;
 
 ,,[[Help|Help]] | [[Change currency symbol|currency symbol]] | [[Credits]],,</pre>
 </div>
-<div created="20210510185906395" modified="20210510194710306" tags="" title="budgetDelta">
-<pre>3</pre>
+<div created="20210510185906395" modified="20210511172231737" tags="" title="budgetDelta">
+<pre>(= {{Income Total}} - {{Expenses Total}} =)</pre>
 </div>
 <div created="20210507092222977" modified="20210508103403803" tags="Expenses Vehicle [[Account: Bills]]" title="Car Insurance" value="35.20">
 <pre></pre>
@@ -11233,6 +11282,9 @@ Less than 0!
 <div created="20210508112904674" modified="20210508113639787" tags="" title="currency symbol">
 <pre>$</pre>
 </div>
+<div title="delta" type="text/vnd.tiddlywiki">
+<pre>test</pre>
+</div>
 <div created="20210507090519163" modified="20210508104448287" tags="Expenses Living [[Account: Occasional spending]]" title="Dry Cleaning" value="15">
 <pre></pre>
 </div>
@@ -11241,6 +11293,9 @@ Less than 0!
 </div>
 <div created="20210507090329065" modified="20210508103104754" tags="Expenses House [[Account: Bills]]" title="Electricity" value="80">
 <pre></pre>
+</div>
+<div title="example" type="text/vnd.tiddlywiki">
+<pre>delta</pre>
 </div>
 <div color="#ffa8b0" created="20210507085206513" icon="$:/images/icon-park/arrows/upload-outline" modified="20210507203443427" tags="Budget" title="Expenses">
 <pre>&lt;&lt;bdgtp&gt;&gt;</pre>
@@ -11254,7 +11309,7 @@ Less than 0!
 <div created="20210508082348890" modified="20210508082401331" tags="" title="Expenses Total">
 <pre>(= sum([tag[Expenses]get[value]]) =)</pre>
 </div>
-<div created="20210507092120976" modified="20210510071550134" tags="Expenses [[Account: Current]] Vehicle" title="Fuel" value="80">
+<div created="20210507092120976" modified="20210511191255467" tags="Expenses [[Account: Current]] Vehicle" title="Fuel" value="80">
 <pre></pre>
 </div>
 <div color="#decfff" created="20210507093009480" icon="$:/images/boxicons/regular/bx-gift" modified="20210509131221664" tags="Categories" title="Gifts">
@@ -11266,7 +11321,7 @@ Less than 0!
 <div color="#cfff9a" created="20210507093618743" icon="$:/images/boxicons/regular/bx-donate-heart" modified="20210508095902814" tags="Categories" title="Giving">
 <pre>&lt;&lt;bdgtp&gt;&gt;</pre>
 </div>
-<div created="20210507085711922" modified="20210508102956101" tags="Expenses [[Account: Bills]] Living" title="Groceries" value="550">
+<div created="20210507085711922" modified="20210511172608597" tags="Expenses [[Account: Bills]] Living" title="Groceries" value="550">
 <pre></pre>
 </div>
 <div created="20210507090806485" modified="20210508104513240" tags="Expenses Living [[Account: Occasional spending]]" title="Hair &amp; Beauty" value="15">
