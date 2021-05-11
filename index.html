@@ -11492,7 +11492,7 @@ If you want to know how this budget calculator works at a more technical level, 
 <div created="20210507092839924" modified="20210508105339762" tags="Expenses Leisure [[Account: Bills]]" title="Streaming Service" value="9">
 <pre></pre>
 </div>
-<div created="20210508071534713" modified="20210510101036025" tags="Help" title="Technical Info">
+<div created="20210508071534713" modified="20210511211033712" tags="Help" title="Technical Info">
 <pre>The [[formulas plugin|https://chronicles.wiki/TiddlyWikiFormula/]] has been used to do all the math in this calculator. The basic syntax is `(= 3+2 =)`, and tiddlers tagged &quot;Income&quot; which all have a &quot;value&quot; field can have their values added together with `(=sum([tag[Income]get[value]])=)`.
 
 The &quot;amount&quot; input is jammed into the subtitle area at the top of each tiddler. Edit this tiddler: [[$:/core/ui/ViewTemplate/subtitle]].  `&lt;&lt;currentTiddler&gt;&gt;` will refer to whichever tiddler the subtitle is contained in. Note the use of `&lt;$set name=&quot;myVar&quot; value=&lt;&lt;currentTiddler&gt;&gt;&gt;`, which means we can use `&lt;&lt;currentTiddler&gt;&gt;` //inside// a filter expression. Then there's some crafty use of the `&lt;$list&gt;` functionality to ONLY show the `&lt;$edit-text&gt;` input field for the currnet tiddler IF it has a &quot;value&quot; field - even if that &quot;value&quot; field is empty. The `&lt;$edit-text&gt;` is set to change the &quot;value&quot; field. Then I do a `&lt;$reveal&gt;` if the &quot;value&quot; field is less than 0.1, to show a little warning if the field is left empty.
@@ -11512,7 +11512,9 @@ The [[&lt;&lt;bdgt&gt;&gt;|budget list macro]] and [[&lt;&lt;bdgtp&gt;|budget li
 This is used in the [[list items of items]] macro. 
 You can also use `(=sum([tag[Accounts]tagging[]get[value]])=)` to add the values of all items tagged with any tag which has a tag called [[Accounts]]. Confused?
 
-</pre>
+The [[budgetDeltaDisplay]] tiddler can be seen on [[Budget Overview]] and in the [[$:/core/ui/SideBar/Open]] and [[budgetDeltaSidebar]] sidebar panels. It's probably heresy to change the &quot;Open&quot; sidebar, but I like seeing both the open tiddler list AND the delta.
+
+The delta itself is an easy calculation. The tricky part was getting the text to go red if your budget is in defecit. The [[google group|https://groups.google.com/g/tiddlywiki/c/D4UqNz3w0iA]] was very helpful in this instance and guided me towards the wikify widget, which I still don't fully understand. </pre>
 </div>
 <div color="#f8ffe2" created="20210507102744975" icon="$:/images/phosphor-icons/duotone/car-duotone" modified="20210508095902818" tags="Categories" title="Vehicle">
 <pre>&lt;&lt;bdgtp&gt;&gt;</pre>
