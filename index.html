@@ -333,8 +333,6 @@ Error message and password prompt
 
 <li>Electricity</li>
 
-<li>example</li>
-
 <li>Expenses</li>
 
 <li>Expenses By Account</li>
@@ -10994,7 +10992,7 @@ wikilist-button-foreground: #000</pre>
 <div created="20210507094330373" modified="20210507094358393" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/Tags</pre>
 </div>
-<div created="20210507082026688" modified="20210510194712421" title="$:/state/tab/sidebar--595412856">
+<div created="20210507082026688" modified="20210511191607765" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/Recent</pre>
 </div>
 <div created="20210507082244443" modified="20210507082305317" title="$:/state/tabs/controlpanel/toolbars-1345989671">
@@ -11003,7 +11001,7 @@ wikilist-button-foreground: #000</pre>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div list="[[Budget Overview]] [[Expenses By Account]] [[Expenses By Category]]" title="$:/StoryList">
+<div created="20210511191555693" list="[[Budget Overview]] [[Expenses By Account]] [[Expenses By Category]]" modified="20210511191555693" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20210510201052831" modified="20210510204130807" module-type="macro" title="$:/than/macros/editTiddler.js" type="application/javascript">
@@ -11219,18 +11217,21 @@ console.log(&quot;ADDING IT&quot;);
 
 </pre>
 </div>
-<div color="#000000" created="20210507082720946" icon="$:/core/images/home-button" modified="20210511191238158" title="Budget Overview">
+<div color="#000000" created="20210507082720946" icon="$:/core/images/home-button" modified="20210511191538145" title="Budget Overview">
 <pre>\define formulaFixed() 2
 &lt;!-- https://chronicles.wiki/TiddlyWikiFormula/#Formulas%20in%20WikiText --&gt;
-|&lt;&lt;listOfList Budget&gt;&gt; | {{newExpenseButton}}&lt;br&gt;&lt;br&gt;{{newIncomeButton}} |
 
+|&lt;&lt;listOfList Budget&gt;&gt; | {{newExpenseButton}}&lt;br&gt;&lt;br&gt;{{newIncomeButton}} |
 
 
 &lt;$wikify name=number text={{budgetDelta}}&gt;
 &lt;$set name=csscolor filter=&quot;[&lt;number&gt;sign[]match[-1]then[color:red;font-weight:bold]else[color:black;]]&quot;&gt;
+
 &lt;h2&gt;Delta: {{currency symbol}}&lt;span style=&lt;&lt;csscolor&gt;&gt;&gt;&lt;&lt;number&gt;&gt;&lt;/span&gt;&lt;/h2&gt;
+
 &lt;/$set&gt;
 &lt;/$wikify&gt;
+
 
 ,,[[Help|Help]] | [[Change currency symbol|currency symbol]] | [[Credits]],,</pre>
 </div>
@@ -11293,9 +11294,6 @@ console.log(&quot;ADDING IT&quot;);
 </div>
 <div created="20210507090329065" modified="20210508103104754" tags="Expenses House [[Account: Bills]]" title="Electricity" value="80">
 <pre></pre>
-</div>
-<div title="example" type="text/vnd.tiddlywiki">
-<pre>delta</pre>
 </div>
 <div color="#ffa8b0" created="20210507085206513" icon="$:/images/icon-park/arrows/upload-outline" modified="20210507203443427" tags="Budget" title="Expenses">
 <pre>&lt;&lt;bdgtp&gt;&gt;</pre>
