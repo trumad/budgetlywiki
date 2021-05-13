@@ -155,6 +155,8 @@ Error message and password prompt
 
 <li>$:/config/RelinkOnRename</li>
 
+<li>$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/delete</li>
+
 <li>$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/new-here</li>
 
 <li>$:/config/WikiParserRules/Inline/wikilink</li>
@@ -181,6 +183,10 @@ Error message and password prompt
 
 <li>$:/images/coreui-icons/free/cil-dog</li>
 
+<li>$:/images/coreui-icons/free/cil-money</li>
+
+<li>$:/images/google-material-design/action/two-tone/24px/addchart</li>
+
 <li>$:/images/google-material-design/maps/outlined/24px/local-grocery-store</li>
 
 <li>$:/images/icon-park/arrows/download-fill</li>
@@ -195,13 +201,25 @@ Error message and password prompt
 
 <li>$:/images/icon-park/money/funds-outline</li>
 
+<li>$:/images/icon-park/money/paper-money-two-outline</li>
+
+<li>$:/images/icon-park/money/shopping-cart-add-outline</li>
+
 <li>$:/images/icon-park/travel/sunshade-outline</li>
 
 <li>$:/images/phosphor-icons/duotone/car-duotone</li>
 
+<li>$:/images/svg-icon/add-to-photos</li>
+
 <li>$:/images/svg-icon/ios-wineglass</li>
 
+<li>$:/images/svg-icon/library-add</li>
+
 <li>$:/images/svg-icon/waves</li>
+
+<li>$:/images/templarian-material-design/cash-plus</li>
+
+<li>$:/images/zwicon/finance/money-stack</li>
 
 <li>$:/images/zwicon/finance/piggy-bank</li>
 
@@ -258,6 +276,8 @@ Error message and password prompt
 <li>$:/status/RequireReloadDueToPluginChange</li>
 
 <li>$:/StoryList</li>
+
+<li>$:/tags/ViewToolbar</li>
 
 <li>$:/than/macros/editTiddler.js</li>
 
@@ -397,6 +417,8 @@ Error message and password prompt
 
 <li>newExpenseButton</li>
 
+<li>newExpenseToolbarButton</li>
+
 <li>newIncomeButton</li>
 
 <li>Partner's Job</li>
@@ -458,8 +480,11 @@ Error message and password prompt
 <div created="20210507090250066" modified="20210507090250066" title="$:/config/RelinkOnRename">
 <pre>yes</pre>
 </div>
-<div created="20210507082307394" modified="20210507082307394" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/new-here">
+<div created="20210513063548986" modified="20210513063548986" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/delete">
 <pre>show</pre>
+</div>
+<div created="20210507082307394" modified="20210513063541668" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/new-here">
+<pre>hide</pre>
 </div>
 <div created="20210507082210803" modified="20210507082210803" title="$:/config/WikiParserRules/Inline/wikilink">
 <pre>disable</pre>
@@ -10399,6 +10424,12 @@ $button$
 <div caption="cil-dog" collection="Free" library="CoreUI Icons" library_version="2.0.1" tags="$:/tags/Image Icons Images SVG" title="$:/images/coreui-icons/free/cil-dog">
 <pre>&lt;svg width=&quot;22pt&quot; height=&quot;22pt&quot; class=&quot;tc-image-cui-cil-dog tc-image-button&quot; viewBox=&quot;0 0 512 512&quot;&gt;&lt;path fill=&quot;var(--ci-primary-color, currentColor)&quot; d=&quot;M393.3,161.33,334.532,76.438a48.09,48.09,0,0,0-38.775-20.673l-111.527-1.6-.23,0c-57.579,0-101.757,9.631-130.21,56.634C27.3,154.551,16,229.08,16,360v16H52.557L29.024,496h32.61L85.167,376H96a99.521,99.521,0,0,0,70.088-27.992c16.979-16.246,29.226-38.472,35.419-64.274l.056-.232L229.006,152h-32.69L170.337,276.488C162.425,309.168,138.766,344,96,344H48.06c.869-113.266,11.182-180.419,33.105-216.634,18.4-30.4,45.295-41.191,102.724-41.206l111.408,1.6a16.026,16.026,0,0,1,12.925,6.891L374.7,190.67,464,205.554v16.959l-14.892,79.421c-4.395,23.441-11.908,35.249-42.718,38.95L280.084,362.493,279.249,496h32l.667-106.493,98.7-16.9c22.36-2.749,38.857-9.955,50.426-22.023,9.89-10.318,15.909-23.5,19.519-42.752L496,225.487V178.446Z&quot;/&gt;&lt;/svg&gt;</pre>
 </div>
+<div caption="cil-money" collection="Free" library="CoreUI Icons" library_version="2.0.1" tags="$:/tags/Image Icons Images SVG" title="$:/images/coreui-icons/free/cil-money">
+<pre>&lt;svg width=&quot;22pt&quot; height=&quot;22pt&quot; class=&quot;tc-image-cui-cil-money tc-image-button&quot; viewBox=&quot;0 0 512 512&quot;&gt;&lt;path fill=&quot;var(--ci-primary-color, currentColor)&quot; d=&quot;M432,64H16V384H432ZM400,352H48V96H400Z&quot;/&gt;&lt;polygon fill=&quot;var(--ci-primary-color, currentColor)&quot; points=&quot;464 144 464 416 96 416 96 448 496 448 496 144 464 144&quot;/&gt;&lt;path fill=&quot;var(--ci-primary-color, currentColor)&quot; d=&quot;M224,302.46c39.7,0,72-35.137,72-78.326s-32.3-78.326-72-78.326-72,35.136-72,78.326S184.3,302.46,224,302.46Zm0-124.652c22.056,0,40,20.782,40,46.326s-17.944,46.326-40,46.326-40-20.782-40-46.326S201.944,177.808,224,177.808Z&quot;/&gt;&lt;rect width=&quot;32&quot; height=&quot;176&quot; x=&quot;80&quot; y=&quot;136&quot; fill=&quot;var(--ci-primary-color, currentColor)&quot;/&gt;&lt;rect width=&quot;32&quot; height=&quot;176&quot; x=&quot;336&quot; y=&quot;136&quot; fill=&quot;var(--ci-primary-color, currentColor)&quot;/&gt;&lt;/svg&gt;</pre>
+</div>
+<div caption="addchart" category="Action" collection="two-tone" library="Google Material Design" library_version="5.9.55" tags="$:/tags/Image Icons Images SVG" title="$:/images/google-material-design/action/two-tone/24px/addchart">
+<pre>&lt;svg width=&quot;22pt&quot; height=&quot;22pt&quot; class=&quot;tc-image-gmd-addchart tc-image-button&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot;&gt;&lt;g&gt;&lt;rect fill=&quot;none&quot; height=&quot;24&quot; width=&quot;24&quot;/&gt;&lt;path d=&quot;M22,5v2h-3v3h-2V7h-3V5h3V2h2v3H22z M19,19H5V5h6V3H5C3.9,3,3,3.9,3,5v14c0,1.1,0.9,2,2,2h14c1.1,0,2-0.9,2-2v-6h-2V19z M15,13v4h2v-4H15z M11,17h2V9h-2V17z M9,17v-6H7v6H9z&quot;/&gt;&lt;/g&gt;&lt;/svg&gt;</pre>
+</div>
 <div caption="local-grocery-store" category="Maps" collection="outlined" library="Google Material Design" library_version="5.9.55" tags="$:/tags/Image Icons Images SVG" title="$:/images/google-material-design/maps/outlined/24px/local-grocery-store">
 <pre>&lt;svg width=&quot;22pt&quot; height=&quot;22pt&quot; class=&quot;tc-image-gmd-local-grocery-store tc-image-button&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot;&gt;&lt;path d=&quot;M0 0h24v24H0V0z&quot; fill=&quot;none&quot;/&gt;&lt;path d=&quot;M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-1.45-5c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6z&quot;/&gt;&lt;/svg&gt;</pre>
 </div>
@@ -10420,17 +10451,35 @@ $button$
 <div caption="funds-outline-outline" category="Money" collection="Outline" library="IconPark" library_version="1.3.0" tags="$:/tags/Image Icons Images SVG" title="$:/images/icon-park/money/funds-outline">
 <pre>&lt;svg width=&quot;22pt&quot; height=&quot;22pt&quot; class=&quot;tc-image-ipk-funds-outline tc-image-button&quot; viewBox=&quot;0 0 48 48&quot; fill=&quot;none&quot;&gt;&lt;rect width=&quot;48&quot; height=&quot;48&quot; fill=&quot;black&quot; fill-opacity=&quot;0.01&quot;/&gt;&lt;ellipse cx=&quot;14&quot; cy=&quot;10&quot; rx=&quot;10&quot; ry=&quot;5&quot; stroke=&quot;black&quot; stroke-width=&quot;4&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;/&gt;&lt;path d=&quot;M4 10C4 10 4 14.2386 4 17C4 19.7614 8.47715 22 14 22C19.5228 22 24 19.7614 24 17C24 15.3644 24 10 24 10&quot; stroke=&quot;black&quot; stroke-width=&quot;4&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;/&gt;&lt;path d=&quot;M4 17C4 17 4 21.2386 4 24C4 26.7614 8.47715 29 14 29C19.5228 29 24 26.7614 24 24C24 22.3644 24 17 24 17&quot; stroke=&quot;black&quot; stroke-width=&quot;4&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;/&gt;&lt;path d=&quot;M4 24C4 24 4 28.2386 4 31C4 33.7614 8.47715 36 14 36C19.5228 36 24 33.7614 24 31C24 29.3644 24 24 24 24&quot; stroke=&quot;black&quot; stroke-width=&quot;4&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;/&gt;&lt;path d=&quot;M4 31C4 31 4 35.2386 4 38C4 40.7614 8.47715 43 14 43C19.5228 43 24 40.7614 24 38C24 36.3644 24 31 24 31&quot; stroke=&quot;black&quot; stroke-width=&quot;4&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;/&gt;&lt;ellipse cx=&quot;34&quot; cy=&quot;24&quot; rx=&quot;10&quot; ry=&quot;5&quot; stroke=&quot;black&quot; stroke-width=&quot;4&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;/&gt;&lt;path d=&quot;M24 24C24 24 24 28.2386 24 31C24 33.7614 28.4772 36 34 36C39.5228 36 44 33.7614 44 31C44 29.3644 44 24 44 24&quot; stroke=&quot;black&quot; stroke-width=&quot;4&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;/&gt;&lt;path d=&quot;M24 31C24 31 24 35.2386 24 38C24 40.7614 28.4772 43 34 43C39.5228 43 44 40.7614 44 38C44 36.3644 44 31 44 31&quot; stroke=&quot;black&quot; stroke-width=&quot;4&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;/&gt;&lt;/svg&gt;</pre>
 </div>
+<div caption="paper-money-two-outline-outline" category="Money" collection="Outline" library="IconPark" library_version="1.3.0" tags="$:/tags/Image Icons Images SVG" title="$:/images/icon-park/money/paper-money-two-outline">
+<pre>&lt;svg width=&quot;22pt&quot; height=&quot;22pt&quot; class=&quot;tc-image-ipk-paper-money-two-outline tc-image-button&quot; viewBox=&quot;0 0 48 48&quot; fill=&quot;none&quot;&gt;&lt;rect width=&quot;48&quot; height=&quot;48&quot; fill=&quot;black&quot; fill-opacity=&quot;0.01&quot;/&gt;&lt;path d=&quot;M4 13H44V37H4V13Z&quot; stroke=&quot;black&quot; stroke-width=&quot;4&quot; stroke-linejoin=&quot;round&quot;/&gt;&lt;path fill-rule=&quot;evenodd&quot; clip-rule=&quot;evenodd&quot; d=&quot;M4 21C8.41828 21 12 17.4183 12 13H4V21Z&quot; stroke=&quot;black&quot; stroke-width=&quot;4&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;/&gt;&lt;path fill-rule=&quot;evenodd&quot; clip-rule=&quot;evenodd&quot; d=&quot;M4 29C8.41828 29 12 32.5817 12 37H4V29Z&quot; stroke=&quot;black&quot; stroke-width=&quot;4&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;/&gt;&lt;path fill-rule=&quot;evenodd&quot; clip-rule=&quot;evenodd&quot; d=&quot;M44 29V37H36C36 32.5817 39.5817 29 44 29Z&quot; stroke=&quot;black&quot; stroke-width=&quot;4&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;/&gt;&lt;path fill-rule=&quot;evenodd&quot; clip-rule=&quot;evenodd&quot; d=&quot;M44 21C39.5817 21 36 17.4183 36 13H44V21Z&quot; stroke=&quot;black&quot; stroke-width=&quot;4&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;/&gt;&lt;path d=&quot;M24 31C26.7614 31 29 28.3137 29 25C29 21.6863 26.7614 19 24 19C21.2386 19 19 21.6863 19 25C19 28.3137 21.2386 31 24 31Z&quot; stroke=&quot;black&quot; stroke-width=&quot;4&quot; stroke-linejoin=&quot;round&quot;/&gt;&lt;/svg&gt;</pre>
+</div>
+<div caption="shopping-cart-add-outline-outline" category="Money" collection="Outline" library="IconPark" library_version="1.3.0" tags="$:/tags/Image Icons Images SVG" title="$:/images/icon-park/money/shopping-cart-add-outline">
+<pre>&lt;svg width=&quot;22pt&quot; height=&quot;22pt&quot; class=&quot;tc-image-ipk-shopping-cart-add-outline tc-image-button&quot; viewBox=&quot;0 0 48 48&quot; fill=&quot;none&quot;&gt;&lt;rect width=&quot;48&quot; height=&quot;48&quot; fill=&quot;black&quot; fill-opacity=&quot;0.01&quot;/&gt;&lt;path d=&quot;M39 32H13L8 12H44L39 32Z&quot; fill=&quot;none&quot;/&gt;&lt;path d=&quot;M3 6H6.5L8 12M8 12L13 32H39L44 12H8Z&quot; stroke=&quot;black&quot; stroke-width=&quot;4&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;/&gt;&lt;circle cx=&quot;13&quot; cy=&quot;39&quot; r=&quot;3&quot; stroke=&quot;black&quot; stroke-width=&quot;4&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;/&gt;&lt;circle cx=&quot;39&quot; cy=&quot;39&quot; r=&quot;3&quot; stroke=&quot;black&quot; stroke-width=&quot;4&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;/&gt;&lt;path d=&quot;M22 22H30&quot; stroke=&quot;black&quot; stroke-width=&quot;4&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;/&gt;&lt;path d=&quot;M26 26V18&quot; stroke=&quot;black&quot; stroke-width=&quot;4&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;/&gt;&lt;/svg&gt;</pre>
+</div>
 <div caption="sunshade-outline-outline" category="Travel" collection="Outline" library="IconPark" library_version="1.3.0" tags="$:/tags/Image Icons Images SVG" title="$:/images/icon-park/travel/sunshade-outline">
 <pre>&lt;svg width=&quot;22pt&quot; height=&quot;22pt&quot; class=&quot;tc-image-ipk-sunshade-outline tc-image-button&quot; viewBox=&quot;0 0 48 48&quot; fill=&quot;none&quot;&gt;&lt;path d=&quot;M40.1032 25.8172C39.2068 28.0999 30.4308 28.8256 21.3618 26.3956C12.2929 23.9655 6.5828 19.5524 7.2617 17.0173C8.79543 11.2934 16.9744 2.46235 28.6712 6.68878C40.368 10.9152 41.6369 20.0932 40.1032 25.8172Z&quot; stroke=&quot;black&quot; stroke-width=&quot;4&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;/&gt;&lt;path d=&quot;M27.9995 7C27.9995 7 23.9993 13.5 20.9995 24C17.9997 34.5 17.9997 42 17.9997 42&quot; stroke=&quot;black&quot; stroke-width=&quot;4&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;/&gt;&lt;path d=&quot;M28.0003 7C28.0003 7 17.7941 8.84353 15 17&quot; stroke=&quot;black&quot; stroke-width=&quot;4&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;/&gt;&lt;path d=&quot;M28.0003 7C28.0003 7 34 13 30.9998 22&quot; stroke=&quot;black&quot; stroke-width=&quot;4&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;/&gt;&lt;path d=&quot;M10 43C10 43 19 41.5 26 41.5C33 41.5 39 42 39 42&quot; stroke=&quot;black&quot; stroke-width=&quot;4&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;/&gt;&lt;path d=&quot;M27.9999 7C29 7 31 6 31.8145 4.41978&quot; stroke=&quot;black&quot; stroke-width=&quot;4&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;/&gt;&lt;path d=&quot;M34 41C34 39.3431 33 37 30 37C27 37 26 39.3431 26 41&quot; stroke=&quot;black&quot; stroke-width=&quot;4&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;/&gt;&lt;/svg&gt;</pre>
 </div>
 <div caption="car-duotone" collection="Duotone" library="Phosphor Icons" library_version="1.2.0" tags="$:/tags/Image Icons Images SVG" title="$:/images/phosphor-icons/duotone/car-duotone">
 <pre>&lt;svg width=&quot;22pt&quot; height=&quot;22pt&quot; class=&quot;tc-image-phi-car-duotone tc-image-button&quot; viewBox=&quot;0 0 256 256&quot;&gt;&lt;rect width=&quot;256&quot; height=&quot;256&quot; fill=&quot;none&quot;/&gt;&lt;path d=&quot;M224,184v24a8,8,0,0,1-8,8H192a8,8,0,0,1-8-8V184Z&quot; opacity=&quot;0.2&quot;/&gt;&lt;path d=&quot;M72,184v24a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V184Z&quot; opacity=&quot;0.2&quot;/&gt;&lt;path d=&quot;M224,120,194.11151,52.75089A8,8,0,0,0,186.801,48H69.199a8,8,0,0,0-7.31049,4.75089L32,120Z&quot; opacity=&quot;0.2&quot;/&gt;&lt;line x1=&quot;16&quot; y1=&quot;120&quot; x2=&quot;240&quot; y2=&quot;120&quot; fill=&quot;none&quot; stroke=&quot;#000&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;16&quot;/&gt;&lt;path d=&quot;M224,184v24a8,8,0,0,1-8,8H192a8,8,0,0,1-8-8V184&quot; fill=&quot;none&quot; stroke=&quot;#000&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;16&quot;/&gt;&lt;path d=&quot;M72,184v24a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V184&quot; fill=&quot;none&quot; stroke=&quot;#000&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;16&quot;/&gt;&lt;line x1=&quot;64&quot; y1=&quot;152&quot; x2=&quot;80&quot; y2=&quot;152&quot; fill=&quot;none&quot; stroke=&quot;#000&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;16&quot;/&gt;&lt;line x1=&quot;176&quot; y1=&quot;152&quot; x2=&quot;192&quot; y2=&quot;152&quot; fill=&quot;none&quot; stroke=&quot;#000&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;16&quot;/&gt;&lt;path d=&quot;M224,120,194.11151,52.75089A8,8,0,0,0,186.801,48H69.199a8,8,0,0,0-7.31049,4.75089L32,120v64H224Z&quot; fill=&quot;none&quot; stroke=&quot;#000&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;16&quot;/&gt;&lt;/svg&gt;</pre>
 </div>
+<div caption="add-to-photos" collection="material" library="svg-icon" tags="$:/tags/Image Icons Images SVG" title="$:/images/svg-icon/add-to-photos">
+<pre>&lt;svg class=&quot;tc-image-add-to-photos tc-image-button&quot; width=&quot;22pt&quot; height=&quot;22pt&quot; viewBox=&quot;0 0 40 40&quot;&gt;&lt;path d=&quot;M4 8H0v28c0 2.21 1.79 4 4 4h28v-4H4V8zm32-8H12C9.79 0 8 1.79 8 4v24c0 2.21 1.79 4 4 4h24c2.21 0 4-1.79 4-4V4c0-2.21-1.79-4-4-4zm-2 18h-8v8h-4v-8h-8v-4h8V6h4v8h8v4z&quot;/&gt;&lt;/svg&gt;</pre>
+</div>
 <div caption="ios-wineglass" collection="ionic" library="svg-icon" tags="$:/tags/Image Icons Images SVG" title="$:/images/svg-icon/ios-wineglass">
 <pre>&lt;svg class=&quot;tc-image-ios-wineglass tc-image-button&quot; width=&quot;22pt&quot; height=&quot;22pt&quot; viewBox=&quot;0 0 192.635986328125 448&quot;&gt;&lt;path d=&quot;M104.323 276.988c0-21.975 20.458-38.674 40.247-54.824 7.907-6.453 15.37-12.547 21.519-18.962 26.547-27.697 26.234-51.744 26.234-71.058V128c0-44.25-30.816-124.558-32.02-128H32.323c-1.203 3.442-32 83.5-32 128v4.144c0 19.273-.323 43.361 26.225 71.059 6.148 6.415 13.617 12.509 21.523 18.962 19.789 16.15 40.252 32.85 40.252 54.824V432h-72v16h160v-16h-72V276.988zM43.052 16h106.522c5.359 15.99 19.509 62.712 24.836 96H18.217c5.327-33.288 19.476-80.01 24.835-96z&quot;/&gt;&lt;/svg&gt;</pre>
 </div>
+<div caption="library-add" collection="material" library="svg-icon" tags="$:/tags/Image Icons Images SVG" title="$:/images/svg-icon/library-add">
+<pre>&lt;svg class=&quot;tc-image-library-add tc-image-button&quot; width=&quot;22pt&quot; height=&quot;22pt&quot; viewBox=&quot;0 0 40 40&quot;&gt;&lt;path d=&quot;M4 8H0v28c0 2.21 1.79 4 4 4h28v-4H4V8zm32-8H12C9.79 0 8 1.79 8 4v24c0 2.21 1.79 4 4 4h24c2.21 0 4-1.79 4-4V4c0-2.21-1.79-4-4-4zm-2 18h-8v8h-4v-8h-8v-4h8V6h4v8h8v4z&quot;/&gt;&lt;/svg&gt;</pre>
+</div>
 <div caption="waves" collection="typcn" library="svg-icon" tags="$:/tags/Image Icons Images SVG" title="$:/images/svg-icon/waves">
 <pre>&lt;svg class=&quot;tc-image-waves tc-image-button&quot; width=&quot;22pt&quot; height=&quot;22pt&quot; version=&quot;1.2&quot; viewBox=&quot;0 0 14.196171760559082 12.991812705993652&quot;&gt;&lt;path d=&quot;M10.098 12.99a5.23 5.23 0 0 1-3.707-1.533 3.246 3.246 0 0 0-4.586 0A1 1 0 1 1 .39 10.043a5.25 5.25 0 0 1 7.414 0 3.248 3.248 0 0 0 4.586 0 1 1 0 1 1 1.414 1.414 5.227 5.227 0 0 1-3.707 1.532zm0-4A5.23 5.23 0 0 1 6.39 7.456a3.246 3.246 0 0 0-4.586 0A1 1 0 1 1 .39 6.043a5.25 5.25 0 0 1 7.414 0 3.248 3.248 0 0 0 4.586 0 1 1 0 1 1 1.414 1.414 5.227 5.227 0 0 1-3.707 1.532zm0-4A5.23 5.23 0 0 1 6.39 3.456a3.246 3.246 0 0 0-4.586 0A1 1 0 1 1 .39 2.043a5.25 5.25 0 0 1 7.414 0 3.248 3.248 0 0 0 4.586 0 1 1 0 1 1 1.414 1.414 5.227 5.227 0 0 1-3.707 1.532z&quot;/&gt;&lt;/svg&gt;</pre>
+</div>
+<div caption="cash-plus" collection="" library="Templarian Material Design" library_version="5.9.55" tags="$:/tags/Image Icons Images SVG" title="$:/images/templarian-material-design/cash-plus">
+<pre>&lt;svg width=&quot;22pt&quot; height=&quot;22pt&quot; class=&quot;tc-image-tmd-cash-plus tc-image-button&quot; viewBox=&quot;0 0 24 24&quot;&gt;&lt;path d=&quot;M15 15V17H18V20H20V17H23V15H20V12H18V15M14.97 11.61C14.85 10.28 13.59 8.97 12 9C10.3 9.03 9 10.3 9 12C9 13.7 10.3 14.94 12 15C12.38 15 12.77 14.92 13.14 14.77C13.41 13.67 13.86 12.63 14.97 11.61M13 16H7C7 14.9 6.11 14 5 14V10C6.11 10 7 9.11 7 8H17C17 9.11 17.9 10 19 10V10.06C19.67 10.06 20.34 10.18 21 10.4V6H3V18H13.32C13.1 17.33 13 16.66 13 16Z&quot; /&gt;&lt;/svg&gt;</pre>
+</div>
+<div caption="money-stack" category="" collection="" library="Zwicon" library_version="1.1" tags="$:/tags/Image Icons Images SVG" title="$:/images/zwicon/finance/money-stack">
+<pre>&lt;svg width=&quot;22pt&quot; height=&quot;22pt&quot; class=&quot;tc-image-zwi-money-stack tc-image-button&quot; viewBox=&quot;0 0 24 24&quot;&gt;&lt;path d=&quot;M6,5 L6,5.5 C6,6.88071187 4.88071187,8 3.5,8 L3,8 L3,12 L3.54138127,12 C4.92209314,12 6.04138127,13.1192881 6.04138127,14.5 L6.04138127,15 L18,15 L18,14.5 C18,13.1192881 19.1192881,12 20.5,12 L21,12 L21,8 L20.5,8 C19.1192881,8 18,6.88071187 18,5.5 L18,5 L6,5 Z M5,5 L4.5,5 C3.67157288,5 3,5.67157288 3,6.5 L3,7 L3.5,7 C4.32842712,7 5,6.32842712 5,5.5 L5,5 Z M5.04138127,15 L5.04138127,14.5 C5.04138127,13.6715729 4.36980839,13 3.54138127,13 L3,13 L3,13.5 C3,14.3284271 3.67157288,15 4.5,15 L5.04138127,15 L5.04138127,15 Z M5.72515192,16 C5.66826565,16.0224932 5.60626682,16.0348527 5.54138127,16.0348527 C5.47649571,16.0348527 5.41449688,16.0224932 5.35761061,16 L4.5,16 C3.11928813,16 2,14.8807119 2,13.5 L2,6.5 C2,5.11928813 3.11928813,4 4.5,4 L19.5,4 C20.8807119,4 22,5.11928813 22,6.5 L22,13.5 C22,14.8807119 20.8807119,16 19.5,16 L5.72515192,16 L5.72515192,16 Z M19,15 L19.5,15 C20.3284271,15 21,14.3284271 21,13.5 L21,13 L20.5,13 C19.6715729,13 19,13.6715729 19,14.5 L19,15 Z M19,5 L19,5.5 C19,6.32842712 19.6715729,7 20.5,7 L21,7 L21,6.5 C21,5.67157288 20.3284271,5 19.5,5 L19,5 Z M12,14 C9.790861,14 8,12.209139 8,10 C8,7.790861 9.790861,6 12,6 C14.209139,6 16,7.790861 16,10 C16,12.209139 14.209139,14 12,14 Z M12,13 C13.6568542,13 15,11.6568542 15,10 C15,8.34314575 13.6568542,7 12,7 C10.3431458,7 9,8.34314575 9,10 C9,11.6568542 10.3431458,13 12,13 Z M2.5,18 C2.22385763,18 2,17.7761424 2,17.5 C2,17.2238576 2.22385763,17 2.5,17 L21.5,17 C21.7761424,17 22,17.2238576 22,17.5 C22,17.7761424 21.7761424,18 21.5,18 L2.5,18 Z M2.5,20 C2.22385763,20 2,19.7761424 2,19.5 C2,19.2238576 2.22385763,19 2.5,19 L21.5,19 C21.7761424,19 22,19.2238576 22,19.5 C22,19.7761424 21.7761424,20 21.5,20 L2.5,20 Z&quot;/&gt;&lt;/svg&gt;</pre>
 </div>
 <div caption="piggy-bank" category="" collection="" library="Zwicon" library_version="1.1" tags="$:/tags/Image Icons Images SVG" title="$:/images/zwicon/finance/piggy-bank">
 <pre>&lt;svg width=&quot;22pt&quot; height=&quot;22pt&quot; class=&quot;tc-image-zwi-piggy-bank tc-image-button&quot; viewBox=&quot;0 0 24 24&quot;&gt;&lt;path d=&quot;M3.08600868,13.9658813 C1.90231209,13.7686189 1,12.7396826 1,11.5 L1,10.5 C1,10.2238576 1.22385763,10 1.5,10 C1.77614237,10 2,10.2238576 2,10.5 L2,11.5 C2,12.1555135 2.42048233,12.712818 3.00644016,12.9169068 C3.00214648,12.7799061 3,12.6409345 3,12.5 C3,8.98310528 6.61112745,6 12.5,6 C13.8841001,6 15.1092766,6.13286706 16.1760594,6.40065509 C16.6402456,4.99397914 17.9653135,4 19.5,4 C19.7761424,4 20,4.22385763 20,4.5 L20,8.63508295 C20.3375772,9.04428157 20.6164404,9.49966803 20.8362579,10 L22.5,10 C22.7761424,10 23,10.2238576 23,10.5 L23,14.5 C23,14.7761424 22.7761424,15 22.5,15 L20.954897,15 C20.7828847,15.9489632 20.120703,16.8623964 19,17.7462284 L19,21.5 C19,21.7761424 18.7761424,22 18.5,22 L15.5,22 C15.2238576,22 15,21.7761424 15,21.5 L15,20 L10,20 L10,21.5 C10,21.7761424 9.77614237,22 9.5,22 L6.5,22 C6.22385763,22 6,21.7761424 6,21.5 L6,18.7999366 C4.33696817,17.856727 3.3670278,16.23049 3.08600868,13.9658813 L3.08600868,13.9658813 Z M17.031813,7.09962337 C16.9836356,7.39939938 16.6815799,7.58739596 16.3913399,7.49824769 C15.3134154,7.16715939 14.0160242,7 12.5,7 C7.12571466,7 4,9.58211211 4,12.5 C4,15.3250259 4.91063808,17.146302 6.7236068,18.0527864 C6.89299881,18.1374824 7,18.310614 7,18.5 L7,21 L9,21 L9,19.5 C9,19.2238576 9.22385763,19 9.5,19 L15.5,19 C15.7761424,19 16,19.2238576 16,19.5 L16,21 L18,21 L18,17.5 C18,17.3426213 18.0740971,17.1944272 18.2,17.1 C19.419755,16.1851838 20,15.3148162 20,14.5 C20,14.2238576 20.2238576,14 20.5,14 L22,14 L22,11 L20.5,11 C20.2915777,11 20.1050174,10.8707136 20.0318354,10.6755617 C19.8144808,10.0959495 19.512593,9.58860545 19.1253859,9.15058459 C19.044594,9.05919019 19,8.94141333 19,8.8194286 L19,5.05021249 C17.9951704,5.25475923 17.1982812,6.06380033 17.031813,7.09962337 Z M10,4.5 C10,4.77614237 9.77614237,5 9.5,5 C9.22385763,5 9,4.77614237 9,4.5 C9,3.11928813 10.1192881,2 11.5,2 L11.5247823,2 C12.9055801,2 14.0249378,3.11935773 14.0249378,4.50015547 C14.0249378,4.77629784 13.8010802,5.00015547 13.5249378,5.00015547 C13.2487954,5.00015547 13.0249378,4.77629784 13.0249378,4.50015547 C13.0249378,3.67164248 12.3532953,3 11.5247823,3 L11.5,3 C10.6715729,3 10,3.67157288 10,4.5 Z M17,12 C16.4477153,12 16,11.5522847 16,11 C16,10.4477153 16.4477153,10 17,10 C17.5522847,10 18,10.4477153 18,11 C18,11.5522847 17.5522847,12 17,12 Z&quot;/&gt;&lt;/svg&gt;</pre>
@@ -10438,7 +10487,13 @@ $button$
 <div status="complete" title="$:/Import">
 <pre>The following tiddlers were imported:
 
-# [[Delta]]</pre>
+# [[$:/images/icon-park/money/shopping-cart-add-outline]]
+# [[$:/images/svg-icon/library-add]]
+# [[$:/images/svg-icon/add-to-photos]]
+# [[$:/images/google-material-design/action/two-tone/24px/addchart]]
+# [[$:/images/icon-park/money/paper-money-two-outline]]
+# [[$:/images/coreui-icons/free/cil-money]]
+# [[$:/images/zwicon/finance/money-stack]]</pre>
 </div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
@@ -11010,11 +11065,11 @@ wikilist-button-foreground: #000</pre>
 <div created="20210507083850981" modified="20210511202632679" title="$:/state/tab--1498284803">
 <pre>$:/core/ui/AdvancedSearch/Shadows</pre>
 </div>
-<div created="20210507082050492" modified="20210507224550909" title="$:/state/tab--1963855381">
-<pre>$:/core/ui/ControlPanel/Palette</pre>
+<div created="20210507082050492" modified="20210513063444215" title="$:/state/tab--1963855381">
+<pre>$:/core/ui/ControlPanel/Toolbars</pre>
 </div>
-<div created="20210507082048765" modified="20210508111316096" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Info</pre>
+<div created="20210507082048765" modified="20210513063437143" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Appearance</pre>
 </div>
 <div created="20210507082427147" modified="20210508102411050" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/DownloadSaver</pre>
@@ -11032,6 +11087,9 @@ wikilist-button-foreground: #000</pre>
 <pre>no</pre>
 </div>
 <div list="[[Budget Overview]] [[Expenses By Account]] [[Expenses By Category]]" title="$:/StoryList">
+<pre></pre>
+</div>
+<div created="20210513063453941" list="$:/core/ui/Buttons/more-tiddler-actions $:/core/ui/Buttons/info $:/core/ui/Buttons/new-here $:/core/ui/Buttons/new-journal-here $:/core/ui/Buttons/clone $:/core/ui/Buttons/export-tiddler $:/core/ui/Buttons/edit $:/core/ui/Buttons/delete $:/core/ui/Buttons/permalink $:/core/ui/Buttons/permaview $:/core/ui/Buttons/open-window $:/core/ui/Buttons/close-others newExpenseToolbarButton $:/core/ui/Buttons/close $:/core/ui/Buttons/fold-others $:/core/ui/Buttons/fold $:/core/ui/Buttons/fold-bar" modified="20210513063453941" title="$:/tags/ViewToolbar">
 <pre></pre>
 </div>
 <div created="20210510201052831" modified="20210510204130807" module-type="macro" title="$:/than/macros/editTiddler.js" type="application/javascript">
@@ -11463,6 +11521,34 @@ If you want to know how this budget calculator works at a more technical level, 
 </div>
 <div created="20210509131853447" modified="20210509132051435" tags="" title="newExpenseButton">
 <pre>&lt;$button&gt;&lt;$action-sendmessage $message=&quot;tm-new-tiddler&quot; title=&quot;Expense name...&quot; tags=&quot;Expenses&quot; value=&quot;0&quot;/&gt;New Expense&lt;/$button&gt;</pre>
+</div>
+<div caption="New Expense Here" created="20210513061232473" description="Create a new expense tagged with this item" modified="20210513075039530" tags="$:/tags/ViewToolbar" title="newExpenseToolbarButton">
+<pre>\define newToDoHereButtonTags()
+[[$(currentTiddlerTag)$]] $(toDoTags)$
+\end
+\define newToDoHereButton()
+&lt;$button tooltip=&quot;New expense here&quot;
+aria-label={{newExpenseToolbarButton!!caption}}
+class=&lt;&lt;tv-config-toolbar-class&gt;&gt;&gt;
+&lt;$action-sendmessage $message=&quot;tm-new-tiddler&quot; title=&quot;New Expense...&quot;
+tags=&lt;&lt;newToDoHereButtonTags&gt;&gt; value=&quot;0&quot; /&gt;
+&lt;$list filter=&quot;[&lt;tv-config-toolbar-icons&gt;prefix[yes]]&quot;&gt;
+{{$:/images/coreui-icons/free/cil-money}}
+&lt;/$list&gt;
+&lt;$list filter=&quot;[&lt;tv-config-toolbar-text&gt;prefix[yes]]&quot;&gt;
+&lt;span class=&quot;tc-btn-text&quot;&gt;&lt;$text
+text={{newExpenseToolbarButton!!caption}}/&gt;&lt;/span&gt;
+&lt;/$list&gt;
+&lt;/$button&gt;
+\end
+&lt;$set name=&quot;toDoTags&quot; value=&quot;Expenses&quot;&gt;
+&lt;$set name=&quot;currentTiddlerTag&quot; value=&lt;&lt;currentTiddler&gt;&gt;&gt;
+&lt;$list filter=&quot;[is[current]tag[Categories]] [is[current]tag[Accounts]]&quot;&gt;
+&lt;&lt;newToDoHereButton&gt;&gt;
+&lt;/$list&gt;
+&lt;/$set&gt;&lt;/$set&gt;
+
+</pre>
 </div>
 <div created="20210509131935491" modified="20210509132106727" tags="" title="newIncomeButton">
 <pre>&lt;$button&gt;&lt;$action-sendmessage $message=&quot;tm-new-tiddler&quot; title=&quot;Income name...&quot; tags=&quot;Income&quot; value=&quot;0&quot;/&gt;New Income&lt;/$button&gt;</pre>
