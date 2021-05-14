@@ -259,6 +259,10 @@ Error message and password prompt
 
 <li>$:/state/edit/references-744858645</li>
 
+<li>$:/state/Excise/-1761938187/tagnew</li>
+
+<li>$:/state/Excise/-1761938187/type</li>
+
 <li>$:/state/showeditpreview</li>
 
 <li>$:/state/ShowPaletteEditor</li>
@@ -307,7 +311,11 @@ Error message and password prompt
 
 <li>Accounts</li>
 
+<li>Advanced Usage</li>
+
 <li>amountViewTemplate</li>
+
+<li>Basic Usage</li>
 
 <li>Birthdays</li>
 
@@ -335,6 +343,10 @@ Error message and password prompt
 
 <li>Categories</li>
 
+<li>Changing Tag Icons</li>
+
+<li>Changing the currency unit</li>
+
 <li>Charity 1</li>
 
 <li>Charity 2</li>
@@ -360,6 +372,10 @@ Error message and password prompt
 <li>Eating out</li>
 
 <li>Electricity</li>
+
+<li>Encryption</li>
+
+<li>Expense Categories</li>
 
 <li>Expenses</li>
 
@@ -438,6 +454,8 @@ Error message and password prompt
 <li>Random Spending</li>
 
 <li>Rates</li>
+
+<li>Saving</li>
 
 <li>Savings</li>
 
@@ -11060,7 +11078,7 @@ wikilist-button-foreground: #000</pre>
 <div created="20210507082009578" modified="20210508111354248" title="$:/SiteTitle">
 <pre>Budgetlywiki</pre>
 </div>
-<div created="20210507083850981" modified="20210514142721341" title="$:/state/advancedsearch/currentTab">
+<div created="20210507083850981" modified="20210514194347951" title="$:/state/advancedsearch/currentTab">
 <pre>$:/core/ui/AdvancedSearch/Shadows</pre>
 </div>
 <div created="20210510095442064" modified="20210510095442064" title="$:/state/edit/references--1149005507">
@@ -11081,13 +11099,19 @@ wikilist-button-foreground: #000</pre>
 <div created="20210508103132635" modified="20210508103132635" title="$:/state/edit/references-744858645">
 <pre>show</pre>
 </div>
-<div created="20210507082748701" modified="20210507082748701" title="$:/state/showeditpreview">
+<div created="20210514193157873" modified="20210514193157873" title="$:/state/Excise/-1761938187/tagnew">
 <pre>yes</pre>
+</div>
+<div created="20210514193200810" modified="20210514193200810" title="$:/state/Excise/-1761938187/type">
+<pre>link</pre>
+</div>
+<div created="20210507082748701" modified="20210514200858258" title="$:/state/showeditpreview">
+<pre>no</pre>
 </div>
 <div created="20210507224600060" modified="20210507224658633" title="$:/state/ShowPaletteEditor">
 <pre>yes</pre>
 </div>
-<div created="20210507083850981" modified="20210514142721342" title="$:/state/tab--1498284803">
+<div created="20210507083850981" modified="20210514194347951" title="$:/state/tab--1498284803">
 <pre>$:/core/ui/AdvancedSearch/Shadows</pre>
 </div>
 <div created="20210507082050492" modified="20210513063444215" title="$:/state/tab--1963855381">
@@ -11111,7 +11135,7 @@ wikilist-button-foreground: #000</pre>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div list="[[Budget Overview]] [[Expenses By Account]] [[Expenses By Category]]" title="$:/StoryList">
+<div created="20210514201035674" list="[[Budget Overview]] [[Expenses By Account]] Gifts [[Expenses By Category]]" modified="20210514201035674" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20210513063453941" list="$:/core/ui/Buttons/more-tiddler-actions $:/core/ui/Buttons/info $:/core/ui/Buttons/new-here $:/core/ui/Buttons/new-journal-here $:/core/ui/Buttons/clone $:/core/ui/Buttons/export-tiddler $:/core/ui/Buttons/edit $:/core/ui/Buttons/delete $:/core/ui/Buttons/permalink $:/core/ui/Buttons/permaview $:/core/ui/Buttons/open-window $:/core/ui/Buttons/close-others newExpenseToolbarButton $:/core/ui/Buttons/close $:/core/ui/Buttons/fold-others $:/core/ui/Buttons/fold $:/core/ui/Buttons/fold-bar" modified="20210513063453941" title="$:/tags/ViewToolbar">
@@ -11287,6 +11311,19 @@ console.log(&quot;ADDING IT&quot;);
 <div color="#dfd8d9" created="20210507094745102" icon="$:/images/coreui-icons/free/cil-bank" list="[[Account: Bills]] [[Account: Current]] [[Account: Occasional spending]]" modified="20210514142954114" tags="" title="Accounts">
 <pre>&lt;&lt;listOfList&gt;&gt;</pre>
 </div>
+<div created="20210514193654508" modified="20210514200052202" tags="Help" title="Advanced Usage">
+<pre>The other main presmise of this budget calculator is to divide [[expenses|Expenses]] up between [[bank accounts|Accounts]].
+
+For example, all ''monthly recurring expenses'' should be set to come out of one account, and that account should //not// be used to pay for anything else. In this example, that's the [[bills account|Account: Bills]]. 
+
+All monthly recurring expenses need to then be tagged &quot;[[Account: Bills]]&quot;. For an example, check the tags on the example [[electricity|Electricity]] account. This means you can easily see how much in total will need to be in the account each month, in order to cover all bills that may come out.
+
+Expenses that come out ''occasionally'' can be tagged with &quot;[[Account: Occasional spending]]&quot;. so that when it's time to pay, you know there will be money in that account ready for it. 
+
+''General spending money'' just gets tagged &quot;[[Account: Current]]&quot;. For example: [[Fuel]]. 
+
+And then you'll know how much money should go into each account at the start of each month.</pre>
+</div>
 <div created="20210512070049256" modified="20210512082101306" tags="$:/tags/ViewTemplate" title="amountViewTemplate" value="33">
 <pre>&lt;$list filter=&quot;[is[current]tag[Expenses]] [is[current]tag[Income]] [is[current]has:field[value]]&quot;&gt;
 
@@ -11295,6 +11332,25 @@ console.log(&quot;ADDING IT&quot;);
 &lt;/$reveal&gt;
 
 &lt;/$list&gt;</pre>
+</div>
+<div created="20210514193423802" modified="20210514194958950" tags="Help" title="Basic Usage">
+<pre>The basic premise of this budget calculator is (obviously) to keep income above expenditure.
+
+''To create a budget item:''
+
+# Click the {{newExpenseButton}} button. 
+# Name your income/expense
+# Click the done button {{$:/core/images/done-button}}
+# Enter the amount
+
+The total income/expense amounts will update on the [[budget overview|Budget Overview]], as well as the balance.
+
+
+&lt;&lt;&lt;
+Bear in mind that all calculations are done on a monthly basis. If you gain income on a weekly basis, or expenses come out on a weekly/annual basis, you will need to do some math to get the accurate monthly amount.
+&lt;&lt;&lt;
+
+</pre>
 </div>
 <div created="20210507093048102" modified="20210508104327784" tags="Expenses Gifts [[Account: Occasional spending]]" title="Birthdays" value="30">
 <pre></pre>
@@ -11380,6 +11436,12 @@ console.log(&quot;ADDING IT&quot;);
 <div color="#d0f064" created="20210508092556366" icon="$:/images/boxicons/regular/bx-category" modified="20210508095902810" tags="" title="Categories">
 <pre>&lt;&lt;listOfList&gt;&gt;</pre>
 </div>
+<div created="20210514193843874" modified="20210514193843874" tags="Help" title="Changing Tag Icons">
+<pre>You can change icons and colours of tags using the [[tag manager|$:/TagManager]]. [[TW-Icons|https://morosanuae.github.io/tw-icons/]] is a fantastic resource if you want more icons. Simply choose some, then drag &amp; drop them onto this page and you'll have more icons to choose from.</pre>
+</div>
+<div created="20210514195047122" modified="20210514195154410" tags="Help" title="Changing the currency unit">
+<pre>Click [[here|currency symbol]] and click the edit button. Change it to your currency symbol and save.</pre>
+</div>
 <div created="20210507093710325" modified="20210514135748818" tags="Expenses Giving [[Account: Bills]]" title="Charity 1" value="21">
 <pre></pre>
 </div>
@@ -11419,6 +11481,14 @@ console.log(&quot;ADDING IT&quot;);
 <div created="20210507090329065" modified="20210508103104754" tags="Expenses House [[Account: Bills]]" title="Electricity" value="80">
 <pre></pre>
 </div>
+<div created="20210514193403361" modified="20210514200156168" tags="Help" title="Encryption">
+<pre>You can encrypt this entire file via tools &gt; set password on the right. Don't forget your password; it can't be recovered!</pre>
+</div>
+<div created="20210514193733798" modified="20210514200352676" tags="Help" title="Expense Categories">
+<pre>You can set a category for each expense. Taking [[Fuel]] as an example, it has the [[Vehicle]] tag. All other expenses related to your vehicle are contained there, as well as a total for the category. 
+
+When making a new category, tag it [[Categories]], so that it shows up in the category list and you can judge spending by category. Also, add this text to the item: `&lt;&lt;bdgtp&gt;&gt;` - this ensures that all expenses with that category tag are listed. Edit the [[Living]] category for a template.</pre>
+</div>
 <div color="#ffa8b0" created="20210507085206513" icon="$:/images/icon-park/arrows/upload-outline" modified="20210507203443427" tags="Budget" title="Expenses">
 <pre>&lt;&lt;bdgtp&gt;&gt;</pre>
 </div>
@@ -11449,31 +11519,16 @@ console.log(&quot;ADDING IT&quot;);
 <div created="20210507090806485" modified="20210508104513240" tags="Expenses Living [[Account: Occasional spending]]" title="Hair &amp; Beauty" value="15">
 <pre></pre>
 </div>
-<div color="#edcbcd" created="20210508071434651" icon="$:/core/images/help" modified="20210510101019617" tags="[[Budget Overview]]" title="Help">
-<pre>!!Saving &amp; Storage
+<div color="#edcbcd" created="20210508071434651" icon="$:/core/images/help" list="[[Basic Usage]] [[Advanced Usage]] Saving Encryption [[Expense Categories]] [[Changing the currency unit]] [[Changing Tag Icons]] [[Technical Info]]" modified="20210514200601867" tags="[[Budget Overview]]" title="Help">
+<pre>!!Help Topics:
 
-Once you make changes, you can save this wiki by clicking {{$:/core/ui/Buttons/save-wiki}} on the top right. Your browser will prompt you to download a html file which will contain this budget calculator with your changes included. [[Click here|https://tiddlywiki.com/#Saving]] for more options for saving. 
-
-You can also encrypt the data via tools &gt; set password on the right. Don't forget your password; it can't be recovered!
-
-!!Usage
-The basic premise of this budget calculator is (obviously) to keep income above expenditure.
-
-This is achieved by creating budget items using the {{$:/core/ui/Buttons/new-tiddler}} button on the top right. Name your income/expense, and then click the &quot;tag name&quot; box. Choose either the Income or Expense tags (this is important, or the figures won't auto-update elsewhere). Then click save, and enter the amount. The total income/expense amounts will show on the [[budget overview|Budget Overview]], as well as the balance. These figures will update in real time as you change/add amounts.
-
-The other main presmise of this budget calculator is to divide [[expenses|Expenses]] up between [[bank accounts|Accounts]]. For example, for all monthly recurring expenses should be set to come out of one account, and that account should //not// be used to pay for anything else. In this example, that's the [[bills account|Account: Bills]]. 
-
-All monthly recurring [[expenses|Expenses]] need to then be tagged &quot;[[Account: Bills]]&quot;. For an example, check the tags on [[electricity|Electricity]]. This means you can easily see how much in total will need to be in the account each month, in order to cover all bills that may come out.
-
-Expenses that come out infrequently can be put into the [[&quot;occasional spending&quot; account|Account: Occasional spending]]. Those expenses are tagged [[Account: Occasional spending]], so that when it's time to pay, you know there will be money in that account ready for it. 
-
-General spending money just stays in the [[current|Account: Current]] account. Expenses that fit into that category (for example [[Fuel]]) are tagged with &quot;[[Account: Current]]&quot; and then you know how much money should go into that account at the start of each month.
-
-You can also set a category for each expense. Again, taking [[Fuel]] as an example, it also has the [[Vehicle]] tag. All other expenses related to your vehicle are contained there. When making a new category item, tag it [[Categories]], so that it shows up in the category list and you can judge spending by category. Also, add this text to the item: `&lt;&lt;bdgtp&gt;&gt;` - this ensures that all expenses with that category tag are listed. Again, see the [[Living]] category for a template.
-
-Bear in mind that all calculations are done on a monthly basis. If you gain income on a weekly basis, or expenses come out on a weekly/annual basis, you will need to do some math to get the accurate monthly amount.
-
-You can change icons and colours of tags using the [[tag manager|$:/TagManager]]. [[TW-Icons|https://morosanuae.github.io/tw-icons/]] is a fantastic resource if you want more icons. Simply choose some, then drag &amp; drop them onto this page and you'll have more icons to choose from.
+* [[Basic Usage]]
+* [[Advanced Usage]]
+* [[Saving]]
+* [[Encryption]]
+* [[Expense Categories]]
+* [[Changing the currency unit]]
+* [[Changing Tag Icons]]
 
 If you want to know how this budget calculator works at a more technical level, read the [[Technical Info]]</pre>
 </div>
@@ -11548,16 +11603,16 @@ If you want to know how this budget calculator works at a more technical level, 
 <div created="20210509131853447" modified="20210509132051435" tags="" title="newExpenseButton">
 <pre>&lt;$button&gt;&lt;$action-sendmessage $message=&quot;tm-new-tiddler&quot; title=&quot;Expense name...&quot; tags=&quot;Expenses&quot; value=&quot;0&quot;/&gt;New Expense&lt;/$button&gt;</pre>
 </div>
-<div caption="New Expense Here" created="20210513061232473" description="Create a new expense tagged with this item" modified="20210513075039530" tags="$:/tags/ViewToolbar" title="newExpenseToolbarButton">
-<pre>\define newToDoHereButtonTags()
-[[$(currentTiddlerTag)$]] $(toDoTags)$
+<div caption="New Expense Here" created="20210513061232473" description="Create a new expense tagged with this item" modified="20210514200825123" tags="$:/tags/ViewToolbar" title="newExpenseToolbarButton">
+<pre>\define newExpenseHereButtonTags()
+[[$(currentTiddlerTag)$]] $(expenseTags)$
 \end
-\define newToDoHereButton()
+\define newExpenseHereButton()
 &lt;$button tooltip=&quot;New expense here&quot;
 aria-label={{newExpenseToolbarButton!!caption}}
 class=&lt;&lt;tv-config-toolbar-class&gt;&gt;&gt;
 &lt;$action-sendmessage $message=&quot;tm-new-tiddler&quot; title=&quot;New Expense...&quot;
-tags=&lt;&lt;newToDoHereButtonTags&gt;&gt; value=&quot;0&quot; /&gt;
+tags=&lt;&lt;newExpenseHereButtonTags&gt;&gt; value=&quot;0&quot; /&gt;
 &lt;$list filter=&quot;[&lt;tv-config-toolbar-icons&gt;prefix[yes]]&quot;&gt;
 {{$:/images/coreui-icons/free/cil-money}}
 &lt;/$list&gt;
@@ -11567,10 +11622,10 @@ text={{newExpenseToolbarButton!!caption}}/&gt;&lt;/span&gt;
 &lt;/$list&gt;
 &lt;/$button&gt;
 \end
-&lt;$set name=&quot;toDoTags&quot; value=&quot;Expenses&quot;&gt;
+&lt;$set name=&quot;expenseTags&quot; value=&quot;Expenses&quot;&gt;
 &lt;$set name=&quot;currentTiddlerTag&quot; value=&lt;&lt;currentTiddler&gt;&gt;&gt;
 &lt;$list filter=&quot;[is[current]tag[Categories]] [is[current]tag[Accounts]]&quot;&gt;
-&lt;&lt;newToDoHereButton&gt;&gt;
+&lt;&lt;newExpenseHereButton&gt;&gt;
 &lt;/$list&gt;
 &lt;/$set&gt;&lt;/$set&gt;
 
@@ -11599,6 +11654,9 @@ text={{newExpenseToolbarButton!!caption}}/&gt;&lt;/span&gt;
 </div>
 <div created="20210507090211696" modified="20210508103322638" tags="Expenses House [[Account: Bills]]" title="Rates" value="55.57">
 <pre></pre>
+</div>
+<div created="20210514193204164" modified="20210514193204164" tags="Help" title="Saving">
+<pre>Once you make changes, you can save this wiki by clicking {{$:/core/ui/Buttons/save-wiki}} on the top right. Your browser will prompt you to download a html file which will contain this budget calculator with your changes included. [[Click here|https://tiddlywiki.com/#Saving]] for more options for saving. </pre>
 </div>
 <div color="#c4e2ff" created="20210507093300632" icon="$:/images/zwicon/finance/piggy-bank" modified="20210508095902817" tags="Categories" title="Savings">
 <pre>&lt;&lt;bdgtp&gt;&gt;</pre>
