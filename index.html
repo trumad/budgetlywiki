@@ -335,8 +335,6 @@ Error message and password prompt
 
 <li>Car Insurance</li>
 
-<li>Car MOT</li>
-
 <li>Car Servicing</li>
 
 <li>Car Tax</li>
@@ -384,6 +382,10 @@ Error message and password prompt
 <li>Expenses By Category</li>
 
 <li>Expenses Total</li>
+
+<li>frequency</li>
+
+<li>frequencyViewTemplate</li>
 
 <li>Fuel</li>
 
@@ -453,13 +455,13 @@ Error message and password prompt
 
 <li>Random Spending</li>
 
-<li>Rates</li>
-
 <li>Saving</li>
 
 <li>Savings</li>
 
 <li>Streaming Service</li>
+
+<li>symbolViewTemplate</li>
 
 <li>tagsDropdownTemplate</li>
 
@@ -11078,8 +11080,8 @@ wikilist-button-foreground: #000</pre>
 <div created="20210507082009578" modified="20210508111354248" title="$:/SiteTitle">
 <pre>Budgetlywiki</pre>
 </div>
-<div created="20210507083850981" modified="20210514194347951" title="$:/state/advancedsearch/currentTab">
-<pre>$:/core/ui/AdvancedSearch/Shadows</pre>
+<div created="20210507083850981" modified="20210515144607082" title="$:/state/advancedsearch/currentTab">
+<pre>$:/core/ui/AdvancedSearch/Filter</pre>
 </div>
 <div created="20210510095442064" modified="20210510095442064" title="$:/state/edit/references--1149005507">
 <pre>show</pre>
@@ -11111,8 +11113,8 @@ wikilist-button-foreground: #000</pre>
 <div created="20210507224600060" modified="20210507224658633" title="$:/state/ShowPaletteEditor">
 <pre>yes</pre>
 </div>
-<div created="20210507083850981" modified="20210514194347951" title="$:/state/tab--1498284803">
-<pre>$:/core/ui/AdvancedSearch/Shadows</pre>
+<div created="20210507083850981" modified="20210515144607082" title="$:/state/tab--1498284803">
+<pre>$:/core/ui/AdvancedSearch/Filter</pre>
 </div>
 <div created="20210507082050492" modified="20210513063444215" title="$:/state/tab--1963855381">
 <pre>$:/core/ui/ControlPanel/Toolbars</pre>
@@ -11126,7 +11128,7 @@ wikilist-button-foreground: #000</pre>
 <div created="20210507094330373" modified="20210507094358393" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/Tags</pre>
 </div>
-<div created="20210507082026688" modified="20210514140845593" title="$:/state/tab/sidebar--595412856">
+<div created="20210507082026688" modified="20210515150324407" title="$:/state/tab/sidebar--595412856">
 <pre>budgetDeltaSidebar</pre>
 </div>
 <div created="20210507082244443" modified="20210507082305317" title="$:/state/tabs/controlpanel/toolbars-1345989671">
@@ -11135,7 +11137,7 @@ wikilist-button-foreground: #000</pre>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div list="[[Budget Overview]] [[Expenses By Account]] [[Expenses By Category]]" title="$:/StoryList">
+<div created="20210515150852857" list="[[Budget Overview]] [[Expenses By Account]] [[Expenses By Category]]" modified="20210515150852857" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20210513063453941" list="$:/core/ui/Buttons/more-tiddler-actions $:/core/ui/Buttons/info $:/core/ui/Buttons/new-here $:/core/ui/Buttons/new-journal-here $:/core/ui/Buttons/clone $:/core/ui/Buttons/export-tiddler $:/core/ui/Buttons/edit $:/core/ui/Buttons/delete $:/core/ui/Buttons/permalink $:/core/ui/Buttons/permaview $:/core/ui/Buttons/open-window $:/core/ui/Buttons/close-others newExpenseToolbarButton $:/core/ui/Buttons/close $:/core/ui/Buttons/fold-others $:/core/ui/Buttons/fold $:/core/ui/Buttons/fold-bar" modified="20210513063453941" title="$:/tags/ViewToolbar">
@@ -11299,14 +11301,14 @@ console.log(&quot;ADDING IT&quot;);
 <div created="20210507113608271" modified="20210507113608636" title="$:/tw-receiver-wikiname">
 <pre>index.html</pre>
 </div>
-<div color="#dcffdc" created="20210507094831194" icon="$:/images/icon-park/base/bill-outline" modified="20210510101707270" tags="Accounts" title="Account: Bills">
-<pre>&lt;&lt;bdgtp&gt;&gt;</pre>
+<div color="#dcffdc" created="20210507094831194" icon="$:/images/icon-park/base/bill-outline" modified="20210515143505682" tags="Accounts" title="Account: Bills">
+<pre>&lt;&lt;bdgt&gt;&gt;</pre>
 </div>
-<div color="#fcecf2" created="20210507102359417" icon="$:/images/svg-icon/waves" modified="20210510101717670" tags="Accounts" title="Account: Current">
-<pre>&lt;&lt;bdgtp&gt;&gt;</pre>
+<div color="#fcecf2" created="20210507102359417" icon="$:/images/svg-icon/waves" modified="20210515150254768" tags="Accounts" title="Account: Current">
+<pre>&lt;&lt;bdgt&gt;&gt;</pre>
 </div>
-<div color="#c8e9fd" created="20210508102658293" icon="$:/images/zwicon/finance/piggy-bank" modified="20210510101727157" tags="Accounts" title="Account: Occasional spending">
-<pre>&lt;&lt;bdgtp&gt;&gt;</pre>
+<div color="#c8e9fd" created="20210508102658293" icon="$:/images/zwicon/finance/piggy-bank" modified="20210515143632500" tags="Accounts" title="Account: Occasional spending">
+<pre>&lt;&lt;bdgt&gt;&gt;</pre>
 </div>
 <div color="#dfd8d9" created="20210507094745102" icon="$:/images/coreui-icons/free/cil-bank" list="[[Account: Bills]] [[Account: Current]] [[Account: Occasional spending]]" modified="20210514142954114" tags="" title="Accounts">
 <pre>&lt;&lt;listOfList&gt;&gt;</pre>
@@ -11324,16 +11326,14 @@ Expenses that come out ''occasionally'' can be tagged with &quot;[[Account: Occa
 
 And then you'll know how much money should go into each account at the start of each month.</pre>
 </div>
-<div created="20210512070049256" modified="20210512082101306" tags="$:/tags/ViewTemplate" title="amountViewTemplate" value="33">
+<div created="20210512070049256" modified="20210515144936816" tags="$:/tags/ViewTemplate" title="amountViewTemplate" value="33">
 <pre>&lt;$list filter=&quot;[is[current]tag[Expenses]] [is[current]tag[Income]] [is[current]has:field[value]]&quot;&gt;
-
-''Amount:'' &amp;nbsp;&amp;nbsp;{{currency symbol}}&lt;$edit-text field=&quot;value&quot; type=&quot;number&quot;/&gt;&lt;$reveal type='lt' state='!!value' text='0.001'&gt;
+''Amount:'' &amp;nbsp;&amp;nbsp;{{currency symbol!!symbol}}&lt;$edit-text field=&quot;value&quot; type=&quot;number&quot;/&gt;&lt;$reveal type='lt' state='!!value' text='0.001'&gt;
 &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;mark&gt;Amount is empty&lt;/mark&gt;
 &lt;/$reveal&gt;
-
 &lt;/$list&gt;</pre>
 </div>
-<div created="20210514193423802" modified="20210514194958950" tags="Help" title="Basic Usage">
+<div created="20210514193423802" modified="20210515150620751" tags="Help" title="Basic Usage">
 <pre>The basic premise of this budget calculator is (obviously) to keep income above expenditure.
 
 ''To create a budget item:''
@@ -11347,7 +11347,7 @@ The total income/expense amounts will update on the [[budget overview|Budget Ove
 
 
 &lt;&lt;&lt;
-Bear in mind that all calculations are done on a monthly basis. If you gain income on a weekly basis, or expenses come out on a weekly/annual basis, you will need to do some math to get the accurate monthly amount.
+Bear in mind that all calculations are done on a per-{{frequency!!frequency}} basis. If you have income or expenses at a different frequency, you will need to do some math to get the accurate amount per {{frequency!!frequency}}. [[The frequency can be changed here|frequency]].
 &lt;&lt;&lt;
 
 </pre>
@@ -11358,16 +11358,16 @@ Bear in mind that all calculations are done on a monthly basis. If you gain inco
 <div color="#92e8ff" created="20210507091635002" icon="$:/images/icon-park/money/funds-outline" modified="20210507091753133" title="Budget">
 <pre></pre>
 </div>
-<div created="20210507194406805" modified="20210514140625903" tags="$:/tags/Macro" title="budget list macro">
+<div created="20210507194406805" modified="20210515145803900" tags="$:/tags/Macro" title="budget list macro">
 <pre>\define bdgt()
 
 &lt;$set name=&quot;myVar&quot; value=&lt;&lt;currentTiddler&gt;&gt;&gt;
 
-''Total:'' {{currency symbol}}(=sum([tag&lt;myVar&gt;!has:field[draft.of]get[value]])=)
+''Total per {{frequency!!frequency}}:'' {{currency symbol!!symbol}}(=sum([tag&lt;myVar&gt;!has:field[draft.of]get[value]])=)
 
 &lt;$list filter=&quot;[tag&lt;myVar&gt;!has:field[draft.of]!nsort[value]]&quot;&gt;
 
-&lt;$link&gt;{{!!title}}&lt;/$link&gt; = {{currency symbol}}{{!!value}}
+&lt;$link&gt;{{!!title}}&lt;/$link&gt; = {{currency symbol!!symbol}}{{!!value}}
 
 &lt;/$list&gt;
 &lt;/$set&gt;
@@ -11376,15 +11376,15 @@ Bear in mind that all calculations are done on a monthly basis. If you gain inco
 
 </pre>
 </div>
-<div created="20210507200358843" modified="20210514140711295" tags="$:/tags/Macro" title="budget list macro with tag pills">
+<div created="20210507200358843" modified="20210515145822364" tags="$:/tags/Macro" title="budget list macro with tag pills">
 <pre>\define bdgtp()
 
 &lt;$set name=&quot;myVar&quot; value=&lt;&lt;currentTiddler&gt;&gt;&gt;
 
-''Total:'' {{currency symbol}}(=sum([tag&lt;myVar&gt;!has:field[draft.of]get[value]])=)
+''Total: per {{frequency!!frequency}}'' {{currency symbol!!symbol}}(=sum([tag&lt;myVar&gt;!has:field[draft.of]get[value]])=)
 
 &lt;$list filter=&quot;[tag&lt;myVar&gt;!has:field[draft.of]!nsort[value]]&quot;&gt;
-&lt;h2&gt;&lt;$link&gt;{{!!title}}&lt;/$link&gt; {{currency symbol}}{{!!value}} &lt;/h2&gt;{{||$:/core/ui/ViewTemplate/tags}}
+&lt;h2&gt;&lt;$link&gt;{{!!title}}&lt;/$link&gt; {{currency symbol!!symbol}}{{!!value}} &lt;/h2&gt;{{||$:/core/ui/ViewTemplate/tags}}
 
 &lt;/$list&gt;
 
@@ -11395,25 +11395,24 @@ Bear in mind that all calculations are done on a monthly basis. If you gain inco
 
 </pre>
 </div>
-<div color="#000000" created="20210507082720946" icon="$:/core/images/home-button" modified="20210515093334131" title="Budget Overview">
+<div color="#000000" created="20210507082720946" icon="$:/core/images/home-button" modified="20210515150936306" title="Budget Overview">
 <pre>\define formulaFixed() 2
-All Income/expenditure is //per month//:
 &lt;!-- https://chronicles.wiki/TiddlyWikiFormula/#Formulas%20in%20WikiText --&gt;
 
 |&lt;&lt;listOfList Budget&gt;&gt; | {{budgetDeltaDisplay}} | {{newExpenseButton}}&lt;br&gt;&lt;br&gt;{{newIncomeButton}} |
 
 
-,,[[Help|Help]] | [[Change currency symbol|currency symbol]] | [[Credits]],,</pre>
+,,[[Help|Help]] | [[Change currency symbol|currency symbol]] | [[Change frequency|frequency]] | [[Credits]],,</pre>
 </div>
 <div created="20210510185906395" modified="20210511172231737" tags="" title="budgetDelta">
 <pre>(= {{Income Total}} - {{Expenses Total}} =)</pre>
 </div>
-<div created="20210511201929073" modified="20210511201955280" tags="" title="budgetDeltaDisplay">
+<div created="20210511201929073" modified="20210515144224959" tags="" title="budgetDeltaDisplay">
 <pre>\define formulaFixed() 2
 &lt;$wikify name=number text={{budgetDelta}}&gt;
 &lt;$set name=csscolor filter=&quot;[&lt;number&gt;sign[]match[-1]then[color:red;font-weight:bold]else[color:black;]]&quot;&gt;
 
-&lt;h1 style=&lt;&lt;csscolor&gt;&gt;&gt;Delta: {{currency symbol}}&lt;&lt;number&gt;&gt;&lt;/h1&gt;
+&lt;h1 style=&lt;&lt;csscolor&gt;&gt;&gt;Delta: {{currency symbol!!symbol}}&lt;&lt;number&gt;&gt;&lt;/h1&gt;
 
 &lt;/$set&gt;
 &lt;/$wikify&gt;</pre>
@@ -11423,9 +11422,6 @@ All Income/expenditure is //per month//:
 {{$:/core/ui/SideBar/Open}}</pre>
 </div>
 <div created="20210507092222977" modified="20210508103403803" tags="Expenses Vehicle [[Account: Bills]]" title="Car Insurance" value="35.20">
-<pre></pre>
-</div>
-<div created="20210507103259222" modified="20210508104757628" tags="Expenses Vehicle [[Account: Occasional spending]]" title="Car MOT" value="2.50">
 <pre></pre>
 </div>
 <div created="20210507092305828" modified="20210508104739855" tags="Expenses Vehicle [[Account: Occasional spending]]" title="Car Servicing" value="20.83">
@@ -11470,8 +11466,8 @@ All Income/expenditure is //per month//:
 <div created="20210509125404067" modified="20210509125659506" title="Credits">
 <pre>Created by [[Thanael|https://thannymack.com/]] using [[TiddlyWiki|https://tiddlywiki.com]]. The [[formulas plugin|https://chronicles.wiki/TiddlyWikiFormula/]] was very useful for this project.</pre>
 </div>
-<div created="20210508112904674" modified="20210508113639787" tags="" title="currency symbol">
-<pre>$</pre>
+<div created="20210508112904674" modified="20210515144727779" symbol="$" tags="" title="currency symbol">
+<pre></pre>
 </div>
 <div created="20210507090519163" modified="20210508104448287" tags="Expenses Living [[Account: Occasional spending]]" title="Dry Cleaning" value="15">
 <pre></pre>
@@ -11502,17 +11498,25 @@ When making a new category, tag it [[Categories]], so that it shows up in the ca
 <div created="20210508082348890" modified="20210514140310557" tags="" title="Expenses Total">
 <pre>(= sum([tag[Expenses]!has:field[draft.of]get[value]]) =)</pre>
 </div>
+<div created="20210515145326973" frequency="month" modified="20210515150631314" tags="" title="frequency">
+<pre></pre>
+</div>
+<div created="20210515145551135" frequency="month" modified="20210515145635127" tags="$:/tags/ViewTemplate" title="frequencyViewTemplate">
+<pre>&lt;$list filter=&quot;[is[current]has:field[frequency]]&quot;&gt;
+&lt;$edit-text field=&quot;frequency&quot;/&gt;
+&lt;/$list&gt;</pre>
+</div>
 <div created="20210507092120976" modified="20210512082122190" tags="Expenses [[Account: Current]] Vehicle" title="Fuel" value="80">
 <pre></pre>
 </div>
-<div color="#decfff" created="20210507093009480" icon="$:/images/boxicons/regular/bx-gift" modified="20210509131221664" tags="Categories" title="Gifts">
-<pre>&lt;&lt;bdgtp&gt;&gt;</pre>
+<div color="#decfff" created="20210507093009480" icon="$:/images/boxicons/regular/bx-gift" modified="20210515143736041" tags="Categories" title="Gifts">
+<pre>&lt;&lt;bdgt&gt;&gt;</pre>
 </div>
 <div created="20210507093445853" modified="20210508104019293" tags="Expenses Gifts [[Account: Occasional spending]]" title="Gifts (random)" value="34">
 <pre></pre>
 </div>
-<div color="#cfff9a" created="20210507093618743" icon="$:/images/boxicons/regular/bx-donate-heart" modified="20210508095902814" tags="Categories" title="Giving">
-<pre>&lt;&lt;bdgtp&gt;&gt;</pre>
+<div color="#cfff9a" created="20210507093618743" icon="$:/images/boxicons/regular/bx-donate-heart" modified="20210515143747741" tags="Categories" title="Giving">
+<pre>&lt;&lt;bdgt&gt;&gt;</pre>
 </div>
 <div created="20210507085711922" modified="20210511172608597" tags="Expenses [[Account: Bills]] Living" title="Groceries" value="550">
 <pre></pre>
@@ -11536,8 +11540,8 @@ If you want to know how this budget calculator works at a more technical level, 
 <div created="20210507093144469" modified="20210508104628770" tags="Expenses Savings [[Account: Occasional spending]]" title="Holiday" value="84">
 <pre></pre>
 </div>
-<div color="#f5ebdc" created="20210507102240123" icon="$:/images/boxicons/solid/bxs-home-heart" modified="20210508095902815" tags="Categories" title="House">
-<pre>&lt;&lt;bdgtp&gt;&gt;</pre>
+<div color="#f5ebdc" created="20210507102240123" icon="$:/images/boxicons/solid/bxs-home-heart" modified="20210515143756002" tags="Categories" title="House">
+<pre>&lt;&lt;bdgt&gt;&gt;</pre>
 </div>
 <div created="20210507090222861" modified="20210508102631196" tags="Expenses House [[Account: Bills]]" title="House Insurance" value="17">
 <pre></pre>
@@ -11560,8 +11564,8 @@ If you want to know how this budget calculator works at a more technical level, 
 <div created="20210507082922117" modified="20210508102837064" tags="Income" title="Job 2" value="400">
 <pre></pre>
 </div>
-<div color="#f3fca3" created="20210507092725000" icon="$:/images/svg-icon/ios-wineglass" modified="20210508095902815" tags="Categories" title="Leisure">
-<pre>&lt;&lt;bdgtp&gt;&gt;
+<div color="#f3fca3" created="20210507092725000" icon="$:/images/svg-icon/ios-wineglass" modified="20210515143803872" tags="Categories" title="Leisure">
+<pre>&lt;&lt;bdgt&gt;&gt;
 
 </pre>
 </div>
@@ -11577,14 +11581,14 @@ If you want to know how this budget calculator works at a more technical level, 
 <div caption="List items and totals within category" created="20210509130957952" modified="20210509131122085" tags="$:/tags/TextEditor/Snippet" title="List items and totals within category (snippet)">
 <pre>&lt;&lt;listOfList&gt;&gt;</pre>
 </div>
-<div created="20210508093056780" modified="20210509133049177" tags="$:/tags/Macro" title="list items of items">
+<div created="20210508093056780" modified="20210515150905248" tags="$:/tags/Macro" title="list items of items">
 <pre>\define listOfList(incomingTag:&lt;&lt;currentTiddler&gt;&gt;)
 
 &lt;$set name=&quot;overallTag&quot; value=$incomingTag$&gt;
 
 &lt;$list filter=&quot;[tag&lt;overallTag&gt;sort[title]]&quot;&gt;
 
- &lt;$transclude tiddler={{!!icon}}/&gt;&amp;nbsp;&amp;nbsp;&lt;$link field=&quot;title&quot;/&gt; = {{currency symbol}}(=sum([is[current]tagging[]get[value]])=)
+ &lt;$transclude tiddler={{!!icon}}/&gt;&amp;nbsp;&amp;nbsp;&lt;$link field=&quot;title&quot;/&gt; per {{frequency!!frequency}} = ''{{currency symbol!!symbol}}(=sum([is[current]tagging[]get[value]])=)''
 
 &lt;/$list&gt;
 
@@ -11592,8 +11596,8 @@ If you want to know how this budget calculator works at a more technical level, 
 
 \end</pre>
 </div>
-<div color="#b7e3e1" created="20210507095305943" icon="$:/images/google-material-design/maps/outlined/24px/local-grocery-store" modified="20210508095902816" tags="Categories" title="Living">
-<pre>&lt;&lt;bdgtp&gt;&gt;</pre>
+<div color="#b7e3e1" created="20210507095305943" icon="$:/images/google-material-design/maps/outlined/24px/local-grocery-store" modified="20210515143811187" tags="Categories" title="Living">
+<pre>&lt;&lt;bdgt&gt;&gt;</pre>
 </div>
 <div created="20210507093411798" modified="20210508103042217" tags="Expenses Savings [[Account: Bills]]" title="Long-term savings" value="75">
 <pre>This remains in [[Account: Bills]], so that it's there when the DD occurs and sends it over to a long-term savings account.</pre>
@@ -11647,31 +11651,35 @@ text={{newExpenseToolbarButton!!caption}}/&gt;&lt;/span&gt;
 <div created="20210508104531250" modified="20210508104556094" tags="Pets [[Account: Current]] Expenses" title="Pet Toys" value="10">
 <pre></pre>
 </div>
-<div color="#efbdd3" created="20210507092440147" icon="$:/images/coreui-icons/free/cil-dog" modified="20210508095902816" tags="Categories" title="Pets">
-<pre>&lt;&lt;bdgtp&gt;&gt;</pre>
+<div color="#efbdd3" created="20210507092440147" icon="$:/images/coreui-icons/free/cil-dog" modified="20210515143818065" tags="Categories" title="Pets">
+<pre>&lt;&lt;bdgt&gt;&gt;</pre>
 </div>
 <div created="20210507090746854" modified="20210508105018129" tags="Expenses Living [[Account: Current]]" title="Random Spending" value="200">
-<pre></pre>
-</div>
-<div created="20210507090211696" modified="20210508103322638" tags="Expenses House [[Account: Bills]]" title="Rates" value="55.57">
 <pre></pre>
 </div>
 <div created="20210514193204164" modified="20210514193204164" tags="Help" title="Saving">
 <pre>Once you make changes, you can save this wiki by clicking {{$:/core/ui/Buttons/save-wiki}} on the top right. Your browser will prompt you to download a html file which will contain this budget calculator with your changes included. [[Click here|https://tiddlywiki.com/#Saving]] for more options for saving. </pre>
 </div>
-<div color="#c4e2ff" created="20210507093300632" icon="$:/images/zwicon/finance/piggy-bank" modified="20210508095902817" tags="Categories" title="Savings">
-<pre>&lt;&lt;bdgtp&gt;&gt;</pre>
+<div color="#c4e2ff" created="20210507093300632" icon="$:/images/zwicon/finance/piggy-bank" modified="20210515143824534" tags="Categories" title="Savings">
+<pre>&lt;&lt;bdgt&gt;&gt;</pre>
 </div>
 <div created="20210507092839924" modified="20210508105339762" tags="Expenses Leisure [[Account: Bills]]" title="Streaming Service" value="9">
 <pre></pre>
 </div>
-<div created="20210514143513638" modified="20210514144432046" tags="" title="tagsDropdownTemplate" value="3">
-<pre>&lt;$link&gt;{{!!title}} &lt;$list filter=&quot;[is[current]has:field[value]]&quot;&gt;&amp;nbsp;&amp;nbsp;({{currency symbol}}{{!!value}})&lt;/$list&gt;&lt;/$link&gt;</pre>
+<div created="20210515144837081" modified="20210515144928839" symbol="$" tags="$:/tags/ViewTemplate" title="symbolViewTemplate">
+<pre>&lt;$list filter=&quot;[is[current]has:field[symbol]]&quot;&gt;
+&lt;$edit-text field=&quot;symbol&quot;/&gt;
+&lt;/$list&gt;</pre>
 </div>
-<div created="20210508071534713" modified="20210514145303986" tags="Help" title="Technical Info">
+<div created="20210514143513638" modified="20210515145959851" tags="" title="tagsDropdownTemplate" value="3">
+<pre>&lt;$link&gt;{{!!title}} &lt;$list filter=&quot;[is[current]has:field[value]]&quot;&gt;&amp;nbsp;&amp;nbsp;({{currency symbol!!symbol}}{{!!value}})&lt;/$list&gt;&lt;/$link&gt;</pre>
+</div>
+<div created="20210508071534713" modified="20210515145020696" tags="Help" title="Technical Info">
 <pre>The [[formulas plugin|https://chronicles.wiki/TiddlyWikiFormula/]] has been used to do all the math in this calculator. The basic syntax is `(= 3+2 =)`, and tiddlers tagged &quot;Income&quot; which all have a &quot;value&quot; field can have their values added together with `(=sum([tag[Income]get[value]])=)`.
 
 The &quot;amount&quot; input is shown at the bottom of all Income &amp; Expense tiddlers, as well as any tiddler which happens to have a value field. Edit this tiddler: [[amountViewTemplate]]. There's some crafty use of the `&lt;$list&gt;` functionality to ONLY show the `&lt;$edit-text&gt;` input field for the currnet tiddler IF it has a &quot;value&quot; field, or is an income or expense.  `is[current]` will refer to whichever tiddler the view template is contained in. The `&lt;$edit-text&gt;` is set to change the &quot;value&quot; field. Then I do a `&lt;$reveal&gt;` if the &quot;value&quot; field is less than 0.001, to show a little warning if the field is left empty.
+
+[[symbolViewTemplate]] does something similar, but for the [[currency symbol]] tiddler. It's the only tiddler it shows up for.
 
 The [[&lt;&lt;bdgt&gt;&gt;|budget list macro]] and [[&lt;&lt;bdgtp&gt;|budget list macro with tag pills]] macros are quick ways to list all expenses associated with an overall tag, from highest to lowest. EG in the [[Leisure]] or [[Account: Occasional spending]] items. The difference between them is that [[&lt;&lt;bdgtp&gt;|budget list macro with tag pills]] shows all the associated tags for each expense, and [[&lt;&lt;bdgt&gt;&gt;|budget list macro]] doesn't. So just call that macro in an overall category tag by typing `&lt;&lt;bdgt&gt;&gt;` in the text field and it'll do its magic. This also means you can edit the macro to change the look of those lists across the whole budget calculator.
 
@@ -11680,7 +11688,7 @@ The [[&lt;&lt;bdgt&gt;&gt;|budget list macro]] and [[&lt;&lt;bdgtp&gt;|budget li
 ```
 &lt;$list filter=&quot;[tag[Budget]!sort[title]]&quot;&gt;
 
-&lt;h2&gt;&lt;$link field=&quot;title&quot;/&gt;&lt;/h2&gt; {{currency symbol}}(=sum([is[current]tagging[]get[value]])=)
+&lt;h2&gt;&lt;$link field=&quot;title&quot;/&gt;&lt;/h2&gt; {{currency symbol!!symbol}}(=sum([is[current]tagging[]get[value]])=)
 
 &lt;/$list&gt;
 ```
@@ -11706,8 +11714,8 @@ In [[Expenses Total]] (and other similar places where addition is happening) I a
 
 I edited [[$:/core/ui/TagTemplate]] to simply include `itemTemplate=&quot;tagsDropdownTemplate&quot;` which relies on [[tagsDropdownTemplate]] to show the amount next to the expense. Again, there's use of `[is[current]has:field[value]]` so that we only do this on relevant tiddlers.</pre>
 </div>
-<div color="#f8ffe2" created="20210507102744975" icon="$:/images/phosphor-icons/duotone/car-duotone" modified="20210508095902818" tags="Categories" title="Vehicle">
-<pre>&lt;&lt;bdgtp&gt;&gt;</pre>
+<div color="#f8ffe2" created="20210507102744975" icon="$:/images/phosphor-icons/duotone/car-duotone" modified="20210515143831181" tags="Categories" title="Vehicle">
+<pre>&lt;&lt;bdgt&gt;&gt;</pre>
 </div>
 <div created="20210507090835270" modified="20210508102631203" tags="Expenses [[Account: Bills]] Leisure" title="Websites" value="3">
 <pre></pre>
