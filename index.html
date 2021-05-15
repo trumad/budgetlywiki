@@ -11137,7 +11137,7 @@ wikilist-button-foreground: #000</pre>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210515150852857" list="[[Budget Overview]] [[Expenses By Account]] [[Expenses By Category]]" modified="20210515150852857" title="$:/StoryList">
+<div list="[[Budget Overview]] [[Expenses By Account]] [[Expenses By Category]]" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20210513063453941" list="$:/core/ui/Buttons/more-tiddler-actions $:/core/ui/Buttons/info $:/core/ui/Buttons/new-here $:/core/ui/Buttons/new-journal-here $:/core/ui/Buttons/clone $:/core/ui/Buttons/export-tiddler $:/core/ui/Buttons/edit $:/core/ui/Buttons/delete $:/core/ui/Buttons/permalink $:/core/ui/Buttons/permaview $:/core/ui/Buttons/open-window $:/core/ui/Buttons/close-others newExpenseToolbarButton $:/core/ui/Buttons/close $:/core/ui/Buttons/fold-others $:/core/ui/Buttons/fold $:/core/ui/Buttons/fold-bar" modified="20210513063453941" title="$:/tags/ViewToolbar">
@@ -11376,7 +11376,7 @@ Bear in mind that all calculations are done on a per-{{frequency!!frequency}} ba
 
 </pre>
 </div>
-<div created="20210507200358843" modified="20210515145822364" tags="$:/tags/Macro" title="budget list macro with tag pills">
+<div created="20210507200358843" modified="20210515151304753" tags="$:/tags/Macro" title="budget list macro with tag pills">
 <pre>\define bdgtp()
 
 &lt;$set name=&quot;myVar&quot; value=&lt;&lt;currentTiddler&gt;&gt;&gt;
@@ -11384,7 +11384,7 @@ Bear in mind that all calculations are done on a per-{{frequency!!frequency}} ba
 ''Total: per {{frequency!!frequency}}'' {{currency symbol!!symbol}}(=sum([tag&lt;myVar&gt;!has:field[draft.of]get[value]])=)
 
 &lt;$list filter=&quot;[tag&lt;myVar&gt;!has:field[draft.of]!nsort[value]]&quot;&gt;
-&lt;h2&gt;&lt;$link&gt;{{!!title}}&lt;/$link&gt; {{currency symbol!!symbol}}{{!!value}} &lt;/h2&gt;{{||$:/core/ui/ViewTemplate/tags}}
+&lt;h2&gt;&lt;$link&gt;{{!!title}}&lt;/$link&gt; per {{frequency!!frequency}} = ''{{currency symbol!!symbol}}{{!!value}}'' &lt;/h2&gt;{{||$:/core/ui/ViewTemplate/tags}}
 
 &lt;/$list&gt;
 
